@@ -1,0 +1,23 @@
+type Query {
+  symptoms: [Symptom]
+  symptom(id: ID!): Symptom
+}
+
+type Mutation {
+  createSymtomp(createSymptomInput: CreateSymptomInput): Symptom
+}
+
+type Subscription {
+  symptomCreated: Symptom
+}
+
+type Symptom {
+  id: ID!
+  name: String
+  description: String
+}
+
+input CreateSymptomInput {
+  name: String
+  description: String
+}
