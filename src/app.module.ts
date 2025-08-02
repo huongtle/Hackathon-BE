@@ -1,10 +1,11 @@
 import { Module } from '@nestjs/common';
 import { GraphQLModule } from '@nestjs/graphql';
 import { ApolloDriver, ApolloDriverConfig } from '@nestjs/apollo';
-// import { MongooseModule } from '@nestjs/mongoose';
+import { MongooseModule } from '@nestjs/mongoose';
 import { join } from 'path';
 import { ConfigModule, ConfigService } from '@nestjs/config';
 import { SymptomModule } from './symptoms/symptom.module';
+import { SymptomSeverityModule } from './symptom-severity/symptom-severity.module';
 
 @Module({
   imports: [
@@ -15,13 +16,14 @@ import { SymptomModule } from './symptoms/symptom.module';
       driver: ApolloDriver,
       autoSchemaFile: join(process.cwd(), 'src/schema.gql'),
     }),
-    // MongooseModule.forRootAsync({
-    //   inject: [ConfigService],
-    //   useFactory: (configService: ConfigService) => ({
-    //     uri: configService.get<string>('MONGO_URI'),
-    //   }),
-    // }),
+    MongooseModule.forRootAsync({
+      inject: [ConfigService],
+      useFactory: (configService: ConfigService) => ({
+        uri: configService.get<string>('MONGO_URI'),
+      }),
+    }),
     SymptomModule,
+    SymptomSeverityModule,
   ],
 })
 export class AppModule {}
