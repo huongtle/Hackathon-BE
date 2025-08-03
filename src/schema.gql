@@ -2,15 +2,42 @@
 # THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
 # ------------------------------------------------------
 
-type SymptomType {
-  input: String
-  result: String
+type SeverityLevelInfo {
+  level: SeverityLevel!
+  name: String!
+  nameEn: String!
+  description: String!
+  descriptionEn: String!
+}
+
+"""Mức độ nghiêm trọng của triệu chứng"""
+enum SeverityLevel {
+  MILD
+  MODERATE
+  SEVERE
+}
+
+type Symptom {
+  name: String!
+  englishName: String!
+  description: String
+  descriptionEn: String
+  severity: Float!
 }
 
 type Query {
-  symptoms: [SymptomType!]!
+  getSymptomSeverities: [SeverityLevelInfo!]!
+  symptoms: [Symptom!]!
+  symptomByLevel(severity: Int!): [Symptom!]!
 }
 
 type Mutation {
-  consultant(input: String!): SymptomType!
+  createSymptom(input: SymptomInput!): Symptom!
+  consultant(input: String!): String!
+}
+
+input SymptomInput {
+  name: String!
+  description: String
+  severity: Int!
 }

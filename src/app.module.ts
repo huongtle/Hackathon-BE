@@ -4,8 +4,8 @@ import { ApolloDriver, ApolloDriverConfig } from '@nestjs/apollo';
 import { MongooseModule } from '@nestjs/mongoose';
 import { join } from 'path';
 import { ConfigModule, ConfigService } from '@nestjs/config';
-import { SymptomModule } from './symptoms/symptom.module';
-import { SymptomSeverityModule } from './symptom-severity/symptom-severity.module';
+import { SeverityModule } from './severity/severity.module';
+import { SymptomModule } from './symptom/symptom.module';
 
 @Module({
   imports: [
@@ -22,8 +22,9 @@ import { SymptomSeverityModule } from './symptom-severity/symptom-severity.modul
         uri: configService.get<string>('MONGO_URI'),
       }),
     }),
+    SeverityModule,
     SymptomModule,
-    SymptomSeverityModule,
   ],
 })
+
 export class AppModule {}

@@ -2,7 +2,7 @@
 import { InputType, Field, Int } from '@nestjs/graphql';
 
 @InputType()
-export class SymptomSeverityInput {
+export class SymptomInput {
   @Field()
   name: string;
 

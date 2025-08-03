@@ -1,13 +1,13 @@
 import { Resolver, Query } from '@nestjs/graphql';
 import { SeverityService } from './severity.service';
-import { SeverityLevelInfo } from './severity.type';
+import { SeverityInfo } from './severity.type';
 
-@Resolver(() => SeverityLevelInfo)
+@Resolver(() => SeverityInfo)
 export class SeverityResolver {
   constructor(private readonly severityService: SeverityService) {}
 
-  @Query(() => [SeverityLevelInfo])
-  getSymptomSeverityLevels(): SeverityLevelInfo[] {
-    return this.severityService.getAllSeverityLevels();
+  @Query(() => [SeverityInfo])
+  getSeverities(): SeverityInfo[] {
+    return this.severityService.getSeverities();
   }
 }

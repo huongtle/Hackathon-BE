@@ -2,7 +2,7 @@ import { ObjectType, Field, Int } from '@nestjs/graphql';
 import { SeverityLevel } from '../common/enums/severity.enum';
 
 @ObjectType()
-export class SeverityLevelInfo {
+export class SeverityInfo {
   @Field(() => SeverityLevel)
   level: SeverityLevel;
 
