@@ -7,7 +7,7 @@ export class SeverityResolver {
   constructor(private readonly severityService: SeverityService) {}
 
   @Query(() => [SeverityInfo])
-  getSeverities(): SeverityInfo[] {
+  severities(): SeverityInfo[] {
     return this.severityService.getSeverities();
   }
 }

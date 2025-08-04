@@ -2,7 +2,7 @@
 # THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
 # ------------------------------------------------------
 
-type SeverityLevelInfo {
+type SeverityInfo {
   level: SeverityLevel!
   name: String!
   nameEn: String!
@@ -26,7 +26,7 @@ type Symptom {
 }
 
 type Query {
-  getSymptomSeverities: [SeverityLevelInfo!]!
+  severities: [SeverityInfo!]!
   symptoms: [Symptom!]!
   symptomByLevel(severity: Int!): [Symptom!]!
 }
