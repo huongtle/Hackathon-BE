@@ -53,3 +53,8 @@ jobs:
             -e OPENAI_API_KEY='${{ secrets.OPENAI_API_KEY }}' \
             -e PORT=4000 \
             ${{ secrets.ECR_REPOSITORY }}:latest"
+
+    - name: Cleanup unused Docker images
+      run: |
+        ssh -i ~/.ssh/id_rsa ${{ secrets.EC2_USER }}@${{ secrets.EC2_HOST }} \
+          "docker image prune -f && docker system prune -f"
