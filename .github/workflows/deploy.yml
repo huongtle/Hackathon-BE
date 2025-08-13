@@ -49,9 +49,7 @@ jobs:
           docker pull ${{ secrets.ECR_REPOSITORY }}:latest && \
           (docker rm -f nestjs-api || true) && \
           docker run -d --name nestjs-api -p 3000:3000 \
-            -e MONGO_USERNAME='${{ secrets.MONGO_USERNAME }}' \
-            -e MONGO_PASSWORD='${{ secrets.MONGO_PASSWORD }}' \
-            -e MONGO_CLUSTER='${{ secrets.MONGO_CLUSTER }}' \
+            -e MONGO_URI='${{ secrets.MONGO_URI }}' \
             -e OPENAI_API_KEY='${{ secrets.OPENAI_API_KEY }}' \
             -e PORT=4000 \
             ${{ secrets.ECR_REPOSITORY }}:latest"
