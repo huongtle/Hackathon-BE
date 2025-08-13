@@ -1,4 +1,4 @@
-name: CI/CD NestJS + ECR
+name: CI/CD NestJS + ECR → EC2
 
 on:
   push:
@@ -7,7 +7,14 @@ on:
 
 jobs:
   build-and-deploy:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
+
+    env:
+      MONGO_USERNAME: ${{ secrets.MONGO_USERNAME }}
+      MONGO_PASSWORD: ${{ secrets.MONGO_PASSWORD }}
+      MONGO_CLUSTER: ${{ secrets.MONGO_CLUSTER }}
+      OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+      PORT: 4000
 
     steps:
     - name: Checkout code
@@ -22,34 +29,41 @@ jobs:
 
     - name: Login to ECR
       run: |
-        aws ecr get-login-password --region ${{ secrets.AWS_REGION }} | docker login --username AWS --password-stdin ${{ secrets.ECR_REPOSITORY }}
+        aws ecr get-login-password --region ${{ secrets.AWS_REGION }} | \
+        docker login --username AWS --password-stdin ${{ secrets.ECR_REPOSITORY }}
 
     - name: Build Docker image
       run: |
         docker build -t nestjs-api .
         docker tag nestjs-api:latest ${{ secrets.ECR_REPOSITORY }}:latest
 
-    - name: Push to ECR
+    - name: Push Docker image to ECR
       run: |
         docker push ${{ secrets.ECR_REPOSITORY }}:latest
 
-    - name: Deploy on EC2
+    - name: Deploy to EC2
       run: |
         mkdir -p ~/.ssh
+        # Lưu key PEM legacy
         echo "${{ secrets.EC2_SSH_KEY }}" > ~/.ssh/id_rsa
         chmod 600 ~/.ssh/id_rsa
         ssh-keyscan -H ${{ secrets.EC2_HOST }} >> ~/.ssh/known_hosts
+
         ssh -i ~/.ssh/id_rsa ${{ secrets.EC2_USER }}@${{ secrets.EC2_HOST }} << 'EOF'
+          set -e
           mkdir -p ${{ secrets.APP_PATH }}
           cd ${{ secrets.APP_PATH }}
-          
-          # Pull image từ ECR
-          aws ecr get-login-password --region ${{ secrets.AWS_REGION }} | docker login --username AWS --password-stdin ${{ secrets.ECR_REPOSITORY }}
+
+          # Login ECR trên EC2
+          aws ecr get-login-password --region ${{ secrets.AWS_REGION }} | \
+          docker login --username AWS --password-stdin ${{ secrets.ECR_REPOSITORY }}
+
+          # Pull image mới
           docker pull ${{ secrets.ECR_REPOSITORY }}:latest
-          
+
           # Dừng container cũ nếu có
           docker rm -f nestjs-api || true
-          
+
           # Chạy container mới
           docker run -d --name nestjs-api -p 3000:3000 ${{ secrets.ECR_REPOSITORY }}:latest
-        EOF
+          EOF
