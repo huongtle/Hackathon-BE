@@ -1,0 +1,55 @@
+name: CI/CD NestJS + ECR
+
+on:
+  push:
+    branches:
+      - develop
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: Configure AWS credentials
+      uses: aws-actions/configure-aws-credentials@v2
+      with:
+        aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+        aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+        aws-region: ${{ secrets.AWS_REGION }}
+
+    - name: Login to ECR
+      run: |
+        aws ecr get-login-password --region ${{ secrets.AWS_REGION }} | docker login --username AWS --password-stdin ${{ secrets.ECR_REPOSITORY }}
+
+    - name: Build Docker image
+      run: |
+        docker build -t nestjs-api .
+        docker tag nestjs-api:latest ${{ secrets.ECR_REPOSITORY }}:latest
+
+    - name: Push to ECR
+      run: |
+        docker push ${{ secrets.ECR_REPOSITORY }}:latest
+
+    - name: Deploy on EC2
+      run: |
+        mkdir -p ~/.ssh
+        echo "${{ secrets.EC2_SSH_KEY }}" > ~/.ssh/id_rsa
+        chmod 600 ~/.ssh/id_rsa
+        ssh-keyscan -H ${{ secrets.EC2_HOST }} >> ~/.ssh/known_hosts
+        ssh -i ~/.ssh/id_rsa ${{ secrets.EC2_USER }}@${{ secrets.EC2_HOST }} << 'EOF'
+          mkdir -p ${{ secrets.APP_PATH }}
+          cd ${{ secrets.APP_PATH }}
+          
+          # Pull image từ ECR
+          aws ecr get-login-password --region ${{ secrets.AWS_REGION }} | docker login --username AWS --password-stdin ${{ secrets.ECR_REPOSITORY }}
+          docker pull ${{ secrets.ECR_REPOSITORY }}:latest
+          
+          # Dừng container cũ nếu có
+          docker rm -f nestjs-api || true
+          
+          # Chạy container mới
+          docker run -d --name nestjs-api -p 3000:3000 ${{ secrets.ECR_REPOSITORY }}:latest
+        EOF
