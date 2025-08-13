@@ -1,0 +1,662 @@
+[
+  {
+    "Symptom": "Sốt",
+    "Description": "Nhiệt độ cơ thể tăng Nặng",
+    "Possible Conditions": "COVID-19",
+    "Source": "WHO, CDC",
+    "Source Link": "https://www.who.int, https://www.cdc.gov",
+    "Severity Level": "Nặng",
+    "Recommended Action": "Đến bệnh viện ngay lập tức"
+  },
+  {
+    "Symptom": "Ho khan",
+    "Description": "Ho dai dẳng, không có đờm",
+    "Possible Conditions": "COVID-19",
+    "Source": "WHO, CDC",
+    "Source Link": "https://www.who.int, https://www.cdc.gov",
+    "Severity Level": "Trung bình",
+    "Recommended Action": "Tham khảo ý kiến bác sĩ"
+  },
+  {
+    "Symptom": "Mệt mỏi",
+    "Description": "Cảm giác mệt mỏi",
+    "Possible Conditions": "COVID-19",
+    "Source": "WHO, CDC",
+    "Source Link": "https://www.who.int, https://www.cdc.gov",
+    "Severity Level": "Trung bình",
+    "Recommended Action": "Tham khảo ý kiến bác sĩ"
+  },
+  {
+    "Symptom": "Mất khứu giác",
+    "Description": "Không thể ngửi mùi",
+    "Possible Conditions": "COVID-19",
+    "Source": "WHO, CDC",
+    "Source Link": "https://www.who.int, https://www.cdc.gov",
+    "Severity Level": "Nặng",
+    "Recommended Action": "Đến bệnh viện ngay lập tức"
+  },
+  {
+    "Symptom": "Mất vị giác",
+    "Description": "Không thể cảm nhận vị",
+    "Possible Conditions": "COVID-19",
+    "Source": "WHO, CDC",
+    "Source Link": "https://www.who.int, https://www.cdc.gov",
+    "Severity Level": "Nặng",
+    "Recommended Action": "Đến bệnh viện ngay lập tức"
+  },
+  {
+    "Symptom": "Khó thở",
+    "Description": "Cảm giác khó thở",
+    "Possible Conditions": "COVID-19",
+    "Source": "WHO, CDC",
+    "Source Link": "https://www.who.int, https://www.cdc.gov",
+    "Severity Level": "Nặng",
+    "Recommended Action": "Đến bệnh viện ngay lập tức"
+  },
+  {
+    "Symptom": "Đau cơ",
+    "Description": "Đau nhức cơ bắp",
+    "Possible Conditions": "COVID-19",
+    "Source": "WHO, CDC",
+    "Source Link": "https://www.who.int, https://www.cdc.gov",
+    "Severity Level": "Nặng",
+    "Recommended Action": "Đến bệnh viện ngay lập tức"
+  },
+  {
+    "Symptom": "Đau họng",
+    "Description": "Đau hoặc rát họng",
+    "Possible Conditions": "COVID-19",
+    "Source": "WHO, CDC",
+    "Source Link": "https://www.who.int, https://www.cdc.gov",
+    "Severity Level": "Nặng",
+    "Recommended Action": "Đến bệnh viện ngay lập tức"
+  },
+  {
+    "Symptom": "Đau đầu",
+    "Description": "Cơn đau ở đầu",
+    "Possible Conditions": "COVID-19",
+    "Source": "WHO, CDC",
+    "Source Link": "https://www.who.int, https://www.cdc.gov",
+    "Severity Level": "Nhẹ",
+    "Recommended Action": "Tự theo dõi và chăm sóc tại nhà"
+  },
+  {
+    "Symptom": "Ớn lạnh",
+    "Description": "Cảm giác lạnh run",
+    "Possible Conditions": "COVID-19",
+    "Source": "WHO, CDC",
+    "Source Link": "https://www.who.int, https://www.cdc.gov",
+    "Severity Level": "Trung bình",
+    "Recommended Action": "Tham khảo ý kiến bác sĩ"
+  },
+  {
+    "Symptom": "Sổ mũi",
+    "Description": "Chảy nhiều nước mũi",
+    "Possible Conditions": "Cúm mùa",
+    "Source": "CDC",
+    "Source Link": "https://www.cdc.gov",
+    "Severity Level": "Nhẹ",
+    "Recommended Action": "Tự theo dõi và chăm sóc tại nhà"
+  },
+  {
+    "Symptom": "Nghẹt mũi",
+    "Description": "Tắc nghẽn mũi",
+    "Possible Conditions": "Cúm mùa",
+    "Source": "CDC",
+    "Source Link": "https://www.cdc.gov",
+    "Severity Level": "Nặng",
+    "Recommended Action": "Đến bệnh viện ngay lập tức"
+  },
+  {
+    "Symptom": "Đổ mồ hôi",
+    "Description": "Ra nhiều mồ hôi",
+    "Possible Conditions": "Cúm mùa",
+    "Source": "CDC",
+    "Source Link": "https://www.cdc.gov",
+    "Severity Level": "Trung bình",
+    "Recommended Action": "Tham khảo ý kiến bác sĩ"
+  },
+  {
+    "Symptom": "Đau nhức cơ thể",
+    "Description": "Đau toàn thân",
+    "Possible Conditions": "Cúm mùa",
+    "Source": "CDC",
+    "Source Link": "https://www.cdc.gov",
+    "Severity Level": "Nhẹ",
+    "Recommended Action": "Tự theo dõi và chăm sóc tại nhà"
+  },
+  {
+    "Symptom": "Nôn mửa",
+    "Description": "Tống thức ăn ra khỏi dạ dày",
+    "Possible Conditions": "Cúm mùa",
+    "Source": "CDC",
+    "Source Link": "https://www.cdc.gov",
+    "Severity Level": "Nhẹ",
+    "Recommended Action": "Tự theo dõi và chăm sóc tại nhà"
+  },
+  {
+    "Symptom": "Sốt Nặng",
+    "Description": "Sốt trên 39°C",
+    "Possible Conditions": "Sốt xuất huyết",
+    "Source": "WHO",
+    "Source Link": "https://www.who.int",
+    "Severity Level": "Trung bình",
+    "Recommended Action": "Tham khảo ý kiến bác sĩ"
+  },
+  {
+    "Symptom": "Đau đầu dữ dội",
+    "Description": "Đau đầu nghiêm trọng",
+    "Possible Conditions": "Sốt xuất huyết",
+    "Source": "WHO",
+    "Source Link": "https://www.who.int",
+    "Severity Level": "Trung bình",
+    "Recommended Action": "Tham khảo ý kiến bác sĩ"
+  },
+  {
+    "Symptom": "Đau sau mắt",
+    "Description": "Đau hốc mắt",
+    "Possible Conditions": "Sốt xuất huyết",
+    "Source": "WHO",
+    "Source Link": "https://www.who.int",
+    "Severity Level": "Trung bình",
+    "Recommended Action": "Tham khảo ý kiến bác sĩ"
+  },
+  {
+    "Symptom": "Đau khớp",
+    "Description": "Đau ở các khớp",
+    "Possible Conditions": "Sốt xuất huyết",
+    "Source": "WHO",
+    "Source Link": "https://www.who.int",
+    "Severity Level": "Nhẹ",
+    "Recommended Action": "Tự theo dõi và chăm sóc tại nhà"
+  },
+  {
+    "Symptom": "Phát ban",
+    "Description": "Da nổi mẩn đỏ",
+    "Possible Conditions": "Sốt xuất huyết",
+    "Source": "WHO",
+    "Source Link": "https://www.who.int",
+    "Severity Level": "Nhẹ",
+    "Recommended Action": "Tự theo dõi và chăm sóc tại nhà"
+  },
+  {
+    "Symptom": "Khò khè",
+    "Description": "Tiếng rít khi thở",
+    "Possible Conditions": "Hen suyễn",
+    "Source": "Mayo Clinic",
+    "Severity Level": "Nặng",
+    "Recommended Action": "Đến bệnh viện ngay lập tức"
+  },
+  {
+    "Symptom": "Tức ngực",
+    "Description": "Cảm giác bóp nghẹt ngực",
+    "Possible Conditions": "Hen suyễn",
+    "Source": "Mayo Clinic",
+    "Severity Level": "Trung bình",
+    "Recommended Action": "Tham khảo ý kiến bác sĩ"
+  },
+  {
+    "Symptom": "Ho về đêm",
+    "Description": "Ho nhiều vào ban đêm",
+    "Possible Conditions": "Hen suyễn",
+    "Source": "Mayo Clinic",
+    "Severity Level": "Nhẹ",
+    "Recommended Action": "Tự theo dõi và chăm sóc tại nhà"
+  },
+  {
+    "Symptom": "Tiêu chảy",
+    "Description": "Đi ngoài phân lỏng nhiều lần",
+    "Possible Conditions": "Ngộ độc thực phẩm",
+    "Source": "CDC",
+    "Source Link": "https://www.cdc.gov",
+    "Severity Level": "Nặng",
+    "Recommended Action": "Đến bệnh viện ngay lập tức"
+  },
+  {
+    "Symptom": "Đau quặn bụng",
+    "Description": "Đau bụng dữ dội",
+    "Possible Conditions": "Ngộ độc thực phẩm",
+    "Source": "CDC",
+    "Source Link": "https://www.cdc.gov",
+    "Severity Level": "Trung bình",
+    "Recommended Action": "Tham khảo ý kiến bác sĩ"
+  },
+  {
+    "Symptom": "Buồn nôn",
+    "Description": "Cảm giác muốn nôn",
+    "Possible Conditions": "Ngộ độc thực phẩm",
+    "Source": "CDC",
+    "Source Link": "https://www.cdc.gov",
+    "Severity Level": "Trung bình",
+    "Recommended Action": "Tham khảo ý kiến bác sĩ"
+  },
+  {
+    "Symptom": "Chán ăn",
+    "Description": "Không muốn ăn",
+    "Possible Conditions": "Ngộ độc thực phẩm",
+    "Source": "CDC",
+    "Source Link": "https://www.cdc.gov",
+    "Severity Level": "Nhẹ",
+    "Recommended Action": "Tự theo dõi và chăm sóc tại nhà"
+  },
+  {
+    "Symptom": "Đau ngực",
+    "Description": "Cảm giác đau tức ở ngực",
+    "Possible Conditions": "Bệnh tim",
+    "Source": "NIH",
+    "Severity Level": "Nặng",
+    "Recommended Action": "Đến bệnh viện ngay lập tức"
+  },
+  {
+    "Symptom": "Phù chân",
+    "Description": "Chân bị sưng do tích nước",
+    "Possible Conditions": "Bệnh tim",
+    "Source": "NIH",
+    "Severity Level": "Trung bình",
+    "Recommended Action": "Tham khảo ý kiến bác sĩ"
+  },
+  {
+    "Symptom": "Tim đập nhanh",
+    "Description": "Nhịp tim nhanh",
+    "Possible Conditions": "Bệnh tim",
+    "Source": "NIH",
+    "Severity Level": "Nhẹ",
+    "Recommended Action": "Tự theo dõi và chăm sóc tại nhà"
+  },
+  {
+    "Symptom": "Đau bụng dưới bên phải",
+    "Description": "Đau nhói bên phải bụng dưới",
+    "Possible Conditions": "Viêm ruột thừa",
+    "Source": "Mayo Clinic",
+    "Severity Level": "Nhẹ",
+    "Recommended Action": "Tự theo dõi và chăm sóc tại nhà"
+  },
+  {
+    "Symptom": "Đau khi thả tay",
+    "Description": "Đau khi nhấn và buông ra",
+    "Possible Conditions": "Viêm ruột thừa",
+    "Source": "Mayo Clinic",
+    "Severity Level": "Nặng",
+    "Recommended Action": "Đến bệnh viện ngay lập tức"
+  },
+  {
+    "Symptom": "Không trung tiện được",
+    "Description": "Không thể đánh hơi",
+    "Possible Conditions": "Viêm ruột thừa",
+    "Source": "Mayo Clinic",
+    "Severity Level": "Nặng",
+    "Recommended Action": "Đến bệnh viện ngay lập tức"
+  },
+  {
+    "Symptom": "Trễ kinh",
+    "Description": "Không có kinh nguyệt",
+    "Possible Conditions": "Mang thai",
+    "Source": "WebMD",
+    "Severity Level": "Trung bình",
+    "Recommended Action": "Tham khảo ý kiến bác sĩ"
+  },
+  {
+    "Symptom": "Ngực căng",
+    "Description": "Ngực nhạy cảm hoặc đau",
+    "Possible Conditions": "Mang thai",
+    "Source": "WebMD",
+    "Severity Level": "Trung bình",
+    "Recommended Action": "Tham khảo ý kiến bác sĩ"
+  },
+  {
+    "Symptom": "Đi tiểu nhiều",
+    "Description": "Thường xuyên đi tiểu",
+    "Possible Conditions": "Mang thai",
+    "Source": "WebMD",
+    "Severity Level": "Nhẹ",
+    "Recommended Action": "Tự theo dõi và chăm sóc tại nhà"
+  },
+  {
+    "Symptom": "Thèm ăn",
+    "Description": "Rất thèm món ăn nhất định",
+    "Possible Conditions": "Mang thai",
+    "Source": "WebMD",
+    "Severity Level": "Nhẹ",
+    "Recommended Action": "Tự theo dõi và chăm sóc tại nhà"
+  },
+  {
+    "Symptom": "Hắt hơi",
+    "Description": "Hơi đẩy mạnh ra khỏi mũi, miệng",
+    "Possible Conditions": "Cảm lạnh",
+    "Source": "CDC",
+    "Source Link": "https://www.cdc.gov",
+    "Severity Level": "Nặng",
+    "Recommended Action": "Đến bệnh viện ngay lập tức"
+  },
+  {
+    "Symptom": "Chảy nước mắt",
+    "Description": "Nhiều nước mắt",
+    "Possible Conditions": "Cảm lạnh",
+    "Source": "CDC",
+    "Source Link": "https://www.cdc.gov",
+    "Severity Level": "Nhẹ",
+    "Recommended Action": "Tự theo dõi và chăm sóc tại nhà"
+  },
+  {
+    "Symptom": "Đau đầu nhẹ",
+    "Description": "Đau đầu mức nhẹ",
+    "Possible Conditions": "Cảm lạnh",
+    "Source": "CDC",
+    "Source Link": "https://www.cdc.gov",
+    "Severity Level": "Nhẹ",
+    "Recommended Action": "Tự theo dõi và chăm sóc tại nhà"
+  },
+  {
+    "Symptom": "Sốt nhẹ",
+    "Description": "Thân nhiệt hơi Nặng",
+    "Possible Conditions": "Cảm lạnh",
+    "Source": "CDC",
+    "Source Link": "https://www.cdc.gov",
+    "Severity Level": "Nhẹ",
+    "Recommended Action": "Tự theo dõi và chăm sóc tại nhà"
+  },
+  {
+    "Symptom": "Khó chịu toàn thân",
+    "Description": "Cảm giác không khỏe",
+    "Possible Conditions": "Cảm lạnh",
+    "Source": "CDC",
+    "Source Link": "https://www.cdc.gov",
+    "Severity Level": "Nhẹ",
+    "Recommended Action": "Tự theo dõi và chăm sóc tại nhà"
+  },
+  {
+    "Symptom": "Ho có đờm",
+    "Description": "Ho kèm theo đờm",
+    "Possible Conditions": "Viêm phổi",
+    "Source": "CDC",
+    "Source Link": "https://www.cdc.gov",
+    "Severity Level": "Nhẹ",
+    "Recommended Action": "Tự theo dõi và chăm sóc tại nhà"
+  },
+  {
+    "Symptom": "Đau ngực khi thở",
+    "Description": "Đau khi hít thở",
+    "Possible Conditions": "Viêm phổi",
+    "Source": "CDC",
+    "Source Link": "https://www.cdc.gov",
+    "Severity Level": "Nhẹ",
+    "Recommended Action": "Tham khảo ý kiến bác sĩ"
+  },
+  {
+    "Symptom": "Môi tím tái",
+    "Description": "Màu môi chuyển sang tím",
+    "Possible Conditions": "Viêm phổi",
+    "Source": "CDC",
+    "Source Link": "https://www.cdc.gov",
+    "Severity Level": "Trung bình",
+    "Recommended Action": "Tham khảo ý kiến bác sĩ"
+  },
+  {
+    "Symptom": "Khát nước quá mức",
+    "Description": "Luôn cảm thấy khát nước",
+    "Possible Conditions": "Tiểu đường",
+    "Source": "CDC",
+    "Source Link": "https://www.cdc.gov",
+    "Severity Level": "Trung bình",
+    "Recommended Action": "Tự theo dõi và chăm sóc tại nhà"
+  },
+  {
+    "Symptom": "Tiểu nhiều",
+    "Description": "Đi tiểu thường xuyên",
+    "Possible Conditions": "Tiểu đường",
+    "Source": "CDC",
+    "Source Link": "https://www.cdc.gov",
+    "Severity Level": "Nhẹ",
+    "Recommended Action": "Tự theo dõi và chăm sóc tại nhà"
+  },
+  {
+    "Symptom": "Lành vết thương chậm",
+    "Description": "Vết thương lâu lành",
+    "Possible Conditions": "Tiểu đường",
+    "Source": "CDC",
+    "Source Link": "https://www.cdc.gov",
+    "Severity Level": "Nhẹ",
+    "Recommended Action": "Tự theo dõi và chăm sóc tại nhà"
+  },
+  {
+    "Symptom": "Chảy máu cam",
+    "Description": "Máu chảy từ mũi",
+    "Possible Conditions": "Tăng huyết áp",
+    "Source": "Mayo Clinic",
+    "Severity Level": "Nhẹ",
+    "Recommended Action": "Tham khảo ý kiến bác sĩ"
+  },
+  {
+    "Symptom": "Nhìn mờ",
+    "Description": "Thị lực bị giảm",
+    "Possible Conditions": "Tăng huyết áp",
+    "Source": "Mayo Clinic",
+    "Severity Level": "Trung bình",
+    "Recommended Action": "Đến bệnh viện ngay lập tức"
+  },
+  {
+    "Symptom": "Sốt + Ho + Đau họng",
+    "Description": "Sốt ≥38°C, ho khan hoặc có đờm, đau rát họng khi nuốt.",
+    "Possible Conditions": "Cúm mùa / Viêm đường hô hấp trên",
+    "Source": "WHO (Influenza)",
+    "Source Link": "https://www.who.int/news-room/fact-sheets/detail/influenza-(seasonal)",
+    "Severity Level": "Nặng",
+    "Recommended Action": "Nghỉ ngơi, uống nhiều nước, thuốc hạ sốt; khám nếu nặng hoặc kéo dài >3 ngày."
+  },
+  {
+    "Symptom": "Sốt Nặng + Khó thở + Ho",
+    "Description": "Sốt Nặng, ho, thở nhanh hoặc hụt hơi, đau ngực khi thở sâu.",
+    "Possible Conditions": "Viêm phổi / COVID-19 nặng",
+    "Source": "WHO (Pneumonia / COVID-19)",
+    "Source Link": "https://www.who.int/news-room/fact-sheets/detail/pneumonia; https://www.who.int/emergencies/diseases/novel-coronavirus-2019",
+    "Severity Level": "Nặng",
+    "Recommended Action": "Đến cơ sở y tế ngay; có thể cần nhập viện, oxy và điều trị kháng sinh/kháng virus theo chỉ định."
+  },
+  {
+    "Symptom": "Tiêu chảy nhiều + Mất nước",
+    "Description": "Đi ngoài phân lỏng nhiều lần, mắt trũng, khô miệng, ít tiểu.",
+    "Possible Conditions": "Tiêu chảy cấp / Viêm dạ dày ruột",
+    "Source": "WHO (Diarrhoeal disease)",
+    "Source Link": "https://www.who.int/news-room/fact-sheets/detail/diarrhoeal-disease",
+    "Severity Level": "Trung bình",
+    "Recommended Action": "Bù nước bằng ORS; nếu không cải thiện, sốt Nặng hoặc máu trong phân → đến cơ sở y tế."
+  },
+  {
+    "Symptom": "Đau bụng dữ dội + Sốt + Buồn nôn",
+    "Description": "Đau bụng cấp, sốt, nôn, đau khu trú (ví dụ hạ vị phải).",
+    "Possible Conditions": "Viêm ruột thừa / Viêm ổ bụng",
+    "Source": "NHS (Appendicitis)",
+    "Source Link": "https://www.nhs.uk/conditions/appendicitis/",
+    "Severity Level": "Rất Nặng",
+    "Recommended Action": "Đánh giá ngoại khoa khẩn; chuẩn bị cận lâm sàng, có thể cần phẫu thuật."
+  },
+  {
+    "Symptom": "Đau ngực + Vã mồ hôi + Buồn nôn",
+    "Description": "Đau ngực ép lan, vã mồ hôi, chóng mặt hoặc buồn nôn.",
+    "Possible Conditions": "Nhồi máu cơ tim",
+    "Source": "AHA / CDC (Heart attack)",
+    "Source Link": "https://www.cdc.gov/heartdisease/heart_attack.htm",
+    "Severity Level": "Rất Nặng",
+    "Recommended Action": "Gọi cấp cứu ngay (115); không cho uống thuốc không được chỉ định, đưa đến bệnh viện có can thiệp tim mạch."
+  },
+  {
+    "Symptom": "Méo mặt đột ngột + Yếu 1 bên + Nói khó",
+    "Description": "Xuất hiện đột ngột méo mặt, yếu tay/chân cùng bên, khó nói.",
+    "Possible Conditions": "Đột quỵ",
+    "Source": "CDC (Stroke)",
+    "Source Link": "https://www.cdc.gov/stroke/signs_symptoms.htm",
+    "Severity Level": "Rất Nặng",
+    "Recommended Action": "Gọi cấp cứu ngay (FAST); chuyển đến trung tâm có chụp CT/MRI và can thiệp kịp thời."
+  },
+  {
+    "Symptom": "Ho + Đờm mủ + Sốt",
+    "Description": "Ho có đờm vàng/xanh, sốt, đau ngực khu trú.",
+    "Possible Conditions": "Viêm phổi do vi khuẩn",
+    "Source": "CDC (Pneumonia)",
+    "Source Link": "https://www.cdc.gov/pneumonia/index.html",
+    "Severity Level": "Nặng",
+    "Recommended Action": "Khám bác sĩ, chụp X-quang phổi, điều trị kháng sinh theo y lệnh."
+  },
+  {
+    "Symptom": "Ho khan + Khò khè + Khó thở về đêm",
+    "Description": "Ho khan, thở rít, các cơn tệ hơn vào ban đêm hoặc khi gắng sức.",
+    "Possible Conditions": "Hen suyễn",
+    "Source": "WHO (Asthma)",
+    "Source Link": "https://www.who.int/news-room/fact-sheets/detail/asthma",
+    "Severity Level": "Trung bình",
+    "Recommended Action": "Dùng thuốc giãn phế quản cắt cơn; đánh giá chuyên khoa hô hấp nếu tái diễn."
+  },
+  {
+    "Symptom": "Sốt + Phát ban + Đau cơ",
+    "Description": "Sốt, phát ban, đau nhức cơ/kho khớp.",
+    "Possible Conditions": "Dengue / Chikungunya",
+    "Source": "WHO (Dengue/Chikungunya)",
+    "Source Link": "https://www.who.int/news-room/fact-sheets/detail/dengue-and-severe-dengue; https://www.who.int/news-room/fact-sheets/detail/chikungunya",
+    "Severity Level": "Nặng",
+    "Recommended Action": "Tìm cơ sở y tế để xét nghiệm; tránh aspirin; theo dõi dấu hiệu cảnh báo."
+  },
+  {
+    "Symptom": "Tiểu rát + Tiểu nhiều + Sốt nhẹ",
+    "Description": "Tiểu buốt, tiểu gắt, có thể sốt nhẹ.",
+    "Possible Conditions": "Nhiễm trùng đường tiết niệu (UTI)",
+    "Source": "CDC (UTI)",
+    "Source Link": "https://www.cdc.gov/antibiotic-use/uti.html",
+    "Severity Level": "Trung bình",
+    "Recommended Action": "Uống nhiều nước, xét nghiệm nước tiểu; dùng kháng sinh theo chỉ định nếu dương tính."
+  },
+  {
+    "Symptom": "Tiểu nhiều + Khát nhiều + Sụt cân",
+    "Description": "Khát nhiều, tiểu nhiều, giảm cân không mong muốn.",
+    "Possible Conditions": "Tiểu đường",
+    "Source": "WHO (Diabetes)",
+    "Source Link": "https://www.who.int/health-topics/diabetes",
+    "Severity Level": "Nặng",
+    "Recommended Action": "Kiểm tra đường huyết ngay; tư vấn thay đổi chế độ ăn và điều trị nội tiết."
+  },
+  {
+    "Symptom": "Đau khớp sưng đỏ + Sốt",
+    "Description": "Sưng nóng đỏ tại 1 khớp, đau dữ dội, sốt.",
+    "Possible Conditions": "Viêm khớp nhiễm khuẩn / Gout cấp",
+    "Source": "Arthritis Foundation / CDC",
+    "Source Link": "https://www.arthritis.org; https://www.cdc.gov",
+    "Severity Level": "Nặng",
+    "Recommended Action": "Khám cấp, chọc dịch khớp để cấy; điều trị kháng sinh hoặc chống viêm theo chẩn đoán."
+  },
+  {
+    "Symptom": "Đau thắt lưng + Tê/chân yếu",
+    "Description": "Đau thắt lưng kèm tê, yếu lan xuống chi dưới.",
+    "Possible Conditions": "Thoát vị đĩa đệm",
+    "Source": "Mayo Clinic (Herniated disk)",
+    "Source Link": "https://www.mayoclinic.org/diseases-conditions/herniated-disk",
+    "Severity Level": "Trung bình",
+    "Recommended Action": "Nghỉ ngơi, vật lý trị liệu; khám chuyên khoa nếu có thiếu hụt thần kinh tiến triển."
+  },
+  {
+    "Symptom": "Đau đầu dữ dội + Cổ cứng + Nôn",
+    "Description": "Đau đầu rất nặng, cổ cứng, nôn, nhạy cảm ánh sáng.",
+    "Possible Conditions": "Viêm màng não",
+    "Source": "WHO (Meningitis)",
+    "Source Link": "https://www.who.int/news-room/fact-sheets/detail/meningitis",
+    "Severity Level": "Rất Nặng",
+    "Recommended Action": "Cấp cứu ngay; làm chọc dò dịch não tủy và điều trị kháng sinh/kháng virus."
+  },
+  {
+    "Symptom": "Mất ý thức/Co giật kéo dài",
+    "Description": "Ngất lâu hoặc co giật kéo dài >5 phút hoặc lặp lại không hồi phục.",
+    "Possible Conditions": "Động kinh nặng / Co giật kéo dài",
+    "Source": "WHO (Epilepsy)",
+    "Source Link": "https://www.who.int/news-room/fact-sheets/detail/epilepsy",
+    "Severity Level": "Rất Nặng",
+    "Recommended Action": "Gọi cấp cứu; xử trí chống co giật theo thuật toán, chăm sóc hô hấp."
+  },
+  {
+    "Symptom": "Ho ra máu + Sụt cân + Mệt mỏi",
+    "Description": "Ho có máu, giảm cân, mệt mỏi kéo dài.",
+    "Possible Conditions": "Lao phổi / Ung thư phổi",
+    "Source": "WHO (Tuberculosis)",
+    "Source Link": "https://www.who.int/health-topics/tuberculosis",
+    "Severity Level": "Nặng",
+    "Recommended Action": "Khám hô hấp, chụp X-quang, làm xét nghiệm đờm; điều trị chuyên khoa."
+  },
+  {
+    "Symptom": "Chóng mặt + Mất thăng bằng + Buồn nôn",
+    "Description": "Choáng váng, khó giữ thăng bằng, buồn nôn hoặc nôn.",
+    "Possible Conditions": "Rối loạn tiền đình / Đột quỵ tiểu não",
+    "Source": "Mayo Clinic / CDC",
+    "Source Link": "https://www.mayoclinic.org; https://www.cdc.gov",
+    "Severity Level": "Trung bình - Nặng",
+    "Recommended Action": "Khám thần kinh khẩn nếu kèm yếu/méo mặt; nếu đơn thuần tiền đình → phục hồi chức năng."
+  },
+  {
+    "Symptom": "Đau bụng + Tiêu chảy + Sốt nhẹ",
+    "Description": "Đau bụng, phân lỏng, sốt nhẹ, có thể đau quặn.",
+    "Possible Conditions": "Nhiễm khuẩn tiêu hóa",
+    "Source": "WHO (Gastroenteritis)",
+    "Source Link": "https://www.who.int/news-room/fact-sheets/detail/diarrhoeal-disease",
+    "Severity Level": "Trung bình",
+    "Recommended Action": "Bù nước, nghỉ ngơi; nếu sốt Nặng, máu trong phân hoặc kéo dài → khám."
+  },
+  {
+    "Symptom": "Mắt đỏ + Đau rát + Giảm thị lực",
+    "Description": "Mắt đỏ, đau, rát, mờ hoặc giảm thị lực.",
+    "Possible Conditions": "Viêm kết mạc / Viêm giác mạc",
+    "Source": "Mayo Clinic / NHS",
+    "Source Link": "https://www.mayoclinic.org; https://www.nhs.uk",
+    "Severity Level": "Trung bình - Nặng",
+    "Recommended Action": "Không dụi mắt; nhỏ thuốc theo chỉ dẫn; khám nhãn khoa nếu đau nhiều hoặc giảm thị lực."
+  },
+  {
+    "Symptom": "Phát ban + Sốt + Mụn nước",
+    "Description": "Sốt kèm mụn nước lan toàn thân hoặc khu trú.",
+    "Possible Conditions": "Thủy đậu / Zona",
+    "Source": "WHO / CDC",
+    "Source Link": "https://www.who.int; https://www.cdc.gov",
+    "Severity Level": "Trung bình - Nặng",
+    "Recommended Action": "Cách ly, chăm sóc triệu chứng; kháng virus nếu chỉ định (trẻ nhỏ/nhóm nguy cơ)."
+  },
+  {
+    "Symptom": "Khó thở + Phù chân + Mệt",
+    "Description": "Khó thở khi gắng sức hoặc khi nghỉ, phù hai chân, mệt nhiều.",
+    "Possible Conditions": "Suy tim sung huyết",
+    "Source": "AHA / WHO",
+    "Source Link": "https://www.heart.org; https://www.who.int",
+    "Severity Level": "Nặng",
+    "Recommended Action": "Khám tim mạch, xét nghiệm chức năng tim; điều trị thuốc, cân bằng dịch."
+  },
+  {
+    "Symptom": "Sốt + Mất vị giác + Khứu giác",
+    "Description": "Sốt, ho, đột ngột mất vị giác/khứu giác.",
+    "Possible Conditions": "COVID-19",
+    "Source": "WHO (COVID-19)",
+    "Source Link": "https://www.who.int/emergencies/diseases/novel-coronavirus-2019",
+    "Severity Level": "Nặng",
+    "Recommended Action": "Cách ly, làm test PCR/rapid, theo hướng dẫn y tế."
+  },
+  {
+    "Symptom": "Đau bụng trên + Ợ nóng + Buồn nôn",
+    "Description": "Đau vùng thượng vị, ợ chua, buồn nôn sau ăn.",
+    "Possible Conditions": "Loét dạ dày / GERD",
+    "Source": "NHS / Mayo Clinic",
+    "Source Link": "https://www.nhs.uk; https://www.mayoclinic.org",
+    "Severity Level": "Trung bình",
+    "Recommended Action": "Thay đổi chế độ ăn, dùng thuốc giảm axit; khám tiêu hóa nếu kéo dài."
+  },
+  {
+    "Symptom": "Tê bì tay/chân + Yếu nhẹ",
+    "Description": "Tê bì, kiến bò, yếu nhẹ, có thể kèm mất cảm giác.",
+    "Possible Conditions": "Bệnh thần kinh ngoại vi (VD: đái tháo đường)",
+    "Source": "WHO / Mayo Clinic",
+    "Source Link": "https://www.who.int; https://www.mayoclinic.org",
+    "Severity Level": "Trung bình",
+    "Recommended Action": "Kiểm tra đường huyết, khám thần kinh, điều trị hỗ trợ."
+  },
+  {
+    "Symptom": "Nhiễm trùng tiết niệu + Sốt Nặng + Đau hông lưng",
+    "Description": "Sốt Nặng kèm đau lưng vùng hông, tiểu buốt/tiểu nhiều.",
+    "Possible Conditions": "Viêm thận-bể thận",
+    "Source": "CDC (UTI/pyelonephritis)",
+    "Source Link": "https://www.cdc.gov/antibiotic-use/uti.html",
+    "Severity Level": "Nặng",
+    "Recommended Action": "Khám, xét nghiệm nước tiểu và máu; kháng sinh đường tĩnh mạch nếu nặng."
+  }
+]

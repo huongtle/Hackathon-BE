@@ -1,0 +1,662 @@
+[
+    {
+        "Symptom": "Fever",
+        "Description": "Elevated body temperature",
+        "Possible Conditions": "COVID-19",
+        "Source": "WHO, CDC",
+        "Source Link": "https://www.who.int, https://www.cdc.gov",
+        "Severity Level": "Severe",
+        "Recommended Action": "Go to the hospital immediately"
+    },
+    {
+        "Symptom": "Dry cough",
+        "Description": "A dry, persistent cough",
+        "Possible Conditions": "COVID-19",
+        "Source": "WHO, CDC",
+        "Source Link": "https://www.who.int, https://www.cdc.gov",
+        "Severity Level": "Moderate",
+        "Recommended Action": "Consult a doctor"
+    },
+    {
+        "Symptom": "Fatigue",
+        "Description": "Feeling of tiredness",
+        "Possible Conditions": "COVID-19",
+        "Source": "WHO, CDC",
+        "Source Link": "https://www.who.int, https://www.cdc.gov",
+        "Severity Level": "Moderate",
+        "Recommended Action": "Consult a doctor"
+    },
+    {
+        "Symptom": "Loss of smell",
+        "Description": "Inability to smell",
+        "Possible Conditions": "COVID-19",
+        "Source": "WHO, CDC",
+        "Source Link": "https://www.who.int, https://www.cdc.gov",
+        "Severity Level": "Severe",
+        "Recommended Action": "Go to the hospital immediately"
+    },
+    {
+        "Symptom": "Loss of taste",
+        "Description": "Inability to taste",
+        "Possible Conditions": "COVID-19",
+        "Source": "WHO, CDC",
+        "Source Link": "https://www.who.int, https://www.cdc.gov",
+        "Severity Level": "Severe",
+        "Recommended Action": "Go to the hospital immediately"
+    },
+    {
+        "Symptom": "Shortness of breath",
+        "Description": "Difficulty breathing",
+        "Possible Conditions": "COVID-19",
+        "Source": "WHO, CDC",
+        "Source Link": "https://www.who.int, https://www.cdc.gov",
+        "Severity Level": "Severe",
+        "Recommended Action": "Go to the hospital immediately"
+    },
+    {
+        "Symptom": "Muscle pain",
+        "Description": "Aching muscles",
+        "Possible Conditions": "COVID-19",
+        "Source": "WHO, CDC",
+        "Source Link": "https://www.who.int, https://www.cdc.gov",
+        "Severity Level": "Severe",
+        "Recommended Action": "Go to the hospital immediately"
+    },
+    {
+        "Symptom": "Sore throat",
+        "Description": "Pain or irritation in the throat",
+        "Possible Conditions": "COVID-19",
+        "Source": "WHO, CDC",
+        "Source Link": "https://www.who.int, https://www.cdc.gov",
+        "Severity Level": "Severe",
+        "Recommended Action": "Go to the hospital immediately"
+    },
+    {
+        "Symptom": "Headache",
+        "Description": "Pain in the head",
+        "Possible Conditions": "COVID-19",
+        "Source": "WHO, CDC",
+        "Source Link": "https://www.who.int, https://www.cdc.gov",
+        "Severity Level": "Mild",
+        "Recommended Action": "Self-monitor and care at home"
+    },
+    {
+        "Symptom": "Chills",
+        "Description": "Feeling cold with shivering",
+        "Possible Conditions": "COVID-19",
+        "Source": "WHO, CDC",
+        "Source Link": "https://www.who.int, https://www.cdc.gov",
+        "Severity Level": "Moderate",
+        "Recommended Action": "Consult a doctor"
+    },
+    {
+        "Symptom": "Runny nose",
+        "Description": "Excess mucus in the nasal cavity",
+        "Possible Conditions": "Flu",
+        "Source": "CDC",
+        "Source Link": "https://www.cdc.gov",
+        "Severity Level": "Mild",
+        "Recommended Action": "Self-monitor and care at home"
+    },
+    {
+        "Symptom": "Nasal congestion",
+        "Description": "Blocked nasal passages",
+        "Possible Conditions": "Flu",
+        "Source": "CDC",
+        "Source Link": "https://www.cdc.gov",
+        "Severity Level": "Severe",
+        "Recommended Action": "Go to the hospital immediately"
+    },
+    {
+        "Symptom": "Sweating",
+        "Description": "Excessive perspiration",
+        "Possible Conditions": "Flu",
+        "Source": "CDC",
+        "Source Link": "https://www.cdc.gov",
+        "Severity Level": "Moderate",
+        "Recommended Action": "Consult a doctor"
+    },
+    {
+        "Symptom": "Body aches",
+        "Description": "Generalized pain in muscles and joints",
+        "Possible Conditions": "Flu",
+        "Source": "CDC",
+        "Source Link": "https://www.cdc.gov",
+        "Severity Level": "Mild",
+        "Recommended Action": "Self-monitor and care at home"
+    },
+    {
+        "Symptom": "Vomiting",
+        "Description": "Expelling stomach contents",
+        "Possible Conditions": "Flu",
+        "Source": "CDC",
+        "Source Link": "https://www.cdc.gov",
+        "Severity Level": "Mild",
+        "Recommended Action": "Self-monitor and care at home"
+    },
+    {
+        "Symptom": "Severe fever",
+        "Description": "Fever above 39°C",
+        "Possible Conditions": "Dengue",
+        "Source": "WHO",
+        "Source Link": "https://www.who.int",
+        "Severity Level": "Moderate",
+        "Recommended Action": "Consult a doctor"
+    },
+    {
+        "Symptom": "Severe headache",
+        "Description": "Intense pain in head",
+        "Possible Conditions": "Dengue",
+        "Source": "WHO",
+        "Source Link": "https://www.who.int",
+        "Severity Level": "Moderate",
+        "Recommended Action": "Consult a doctor"
+    },
+    {
+        "Symptom": "Pain behind the eyes",
+        "Description": "Eye socket pain",
+        "Possible Conditions": "Dengue",
+        "Source": "WHO",
+        "Source Link": "https://www.who.int",
+        "Severity Level": "Moderate",
+        "Recommended Action": "Consult a doctor"
+    },
+    {
+        "Symptom": "Joint pain",
+        "Description": "Aching in joints",
+        "Possible Conditions": "Dengue",
+        "Source": "WHO",
+        "Source Link": "https://www.who.int",
+        "Severity Level": "Mild",
+        "Recommended Action": "Self-monitor and care at home"
+    },
+    {
+        "Symptom": "Skin rash",
+        "Description": "Red spots on skin",
+        "Possible Conditions": "Dengue",
+        "Source": "WHO",
+        "Source Link": "https://www.who.int",
+        "Severity Level": "Mild",
+        "Recommended Action": "Self-monitor and care at home"
+    },
+    {
+        "Symptom": "Wheezing",
+        "Description": "Severe-pitched whistling sound while breathing",
+        "Possible Conditions": "Asthma",
+        "Source": "Mayo Clinic",
+        "Severity Level": "Severe",
+        "Recommended Action": "Go to the hospital immediately"
+    },
+    {
+        "Symptom": "Chest tightness",
+        "Description": "Feeling of pressure in chest",
+        "Possible Conditions": "Asthma",
+        "Source": "Mayo Clinic",
+        "Severity Level": "Moderate",
+        "Recommended Action": "Consult a doctor"
+    },
+    {
+        "Symptom": "Coughing at night",
+        "Description": "Cough that worsens at night",
+        "Possible Conditions": "Asthma",
+        "Source": "Mayo Clinic",
+        "Severity Level": "Mild",
+        "Recommended Action": "Self-monitor and care at home"
+    },
+    {
+        "Symptom": "Diarrhea",
+        "Description": "Frequent loose stools",
+        "Possible Conditions": "Food poisoning",
+        "Source": "CDC",
+        "Source Link": "https://www.cdc.gov",
+        "Severity Level": "Severe",
+        "Recommended Action": "Go to the hospital immediately"
+    },
+    {
+        "Symptom": "Stomach cramps",
+        "Description": "Sudden stomach pain",
+        "Possible Conditions": "Food poisoning",
+        "Source": "CDC",
+        "Source Link": "https://www.cdc.gov",
+        "Severity Level": "Moderate",
+        "Recommended Action": "Consult a doctor"
+    },
+    {
+        "Symptom": "Nausea",
+        "Description": "Urge to vomit",
+        "Possible Conditions": "Food poisoning",
+        "Source": "CDC",
+        "Source Link": "https://www.cdc.gov",
+        "Severity Level": "Moderate",
+        "Recommended Action": "Consult a doctor"
+    },
+    {
+        "Symptom": "Loss of appetite",
+        "Description": "Reduced desire to eat",
+        "Possible Conditions": "Food poisoning",
+        "Source": "CDC",
+        "Source Link": "https://www.cdc.gov",
+        "Severity Level": "Mild",
+        "Recommended Action": "Self-monitor and care at home"
+    },
+    {
+        "Symptom": "Chest pain",
+        "Description": "Discomfort in chest area",
+        "Possible Conditions": "Heart disease",
+        "Source": "NIH",
+        "Severity Level": "Severe",
+        "Recommended Action": "Go to the hospital immediately"
+    },
+    {
+        "Symptom": "Swelling in legs",
+        "Description": "Fluid buildup in legs",
+        "Possible Conditions": "Heart disease",
+        "Source": "NIH",
+        "Severity Level": "Moderate",
+        "Recommended Action": "Consult a doctor"
+    },
+    {
+        "Symptom": "Rapid heartbeat",
+        "Description": "Fast heart rate",
+        "Possible Conditions": "Heart disease",
+        "Source": "NIH",
+        "Severity Level": "Mild",
+        "Recommended Action": "Self-monitor and care at home"
+    },
+    {
+        "Symptom": "Milder right abdominal pain",
+        "Description": "Sharp pain in Milder right abdomen",
+        "Possible Conditions": "Appendicitis",
+        "Source": "Mayo Clinic",
+        "Severity Level": "Mild",
+        "Recommended Action": "Self-monitor and care at home"
+    },
+    {
+        "Symptom": "Rebound tenderness",
+        "Description": "Pain when pressure is released",
+        "Possible Conditions": "Appendicitis",
+        "Source": "Mayo Clinic",
+        "Severity Level": "Severe",
+        "Recommended Action": "Go to the hospital immediately"
+    },
+    {
+        "Symptom": "Inability to pass gas",
+        "Description": "Inability to release gas",
+        "Possible Conditions": "Appendicitis",
+        "Source": "Mayo Clinic",
+        "Severity Level": "Severe",
+        "Recommended Action": "Go to the hospital immediately"
+    },
+    {
+        "Symptom": "Missed period",
+        "Description": "No menstruation",
+        "Possible Conditions": "Pregnancy",
+        "Source": "WebMD",
+        "Severity Level": "Moderate",
+        "Recommended Action": "Consult a doctor"
+    },
+    {
+        "Symptom": "Breast tenderness",
+        "Description": "Sensitive or painful breasts",
+        "Possible Conditions": "Pregnancy",
+        "Source": "WebMD",
+        "Severity Level": "Moderate",
+        "Recommended Action": "Consult a doctor"
+    },
+    {
+        "Symptom": "Frequent urination",
+        "Description": "Increased urge to urinate",
+        "Possible Conditions": "Pregnancy",
+        "Source": "WebMD",
+        "Severity Level": "Mild",
+        "Recommended Action": "Self-monitor and care at home"
+    },
+    {
+        "Symptom": "Cravings",
+        "Description": "Strong desire for specific foods",
+        "Possible Conditions": "Pregnancy",
+        "Source": "WebMD",
+        "Severity Level": "Mild",
+        "Recommended Action": "Self-monitor and care at home"
+    },
+    {
+        "Symptom": "Sneezing",
+        "Description": "Expulsion of air through nose and mouth",
+        "Possible Conditions": "Common cold",
+        "Source": "CDC",
+        "Source Link": "https://www.cdc.gov",
+        "Severity Level": "Severe",
+        "Recommended Action": "Go to the hospital immediately"
+    },
+    {
+        "Symptom": "Watery eyes",
+        "Description": "Excess tearing",
+        "Possible Conditions": "Common cold",
+        "Source": "CDC",
+        "Source Link": "https://www.cdc.gov",
+        "Severity Level": "Mild",
+        "Recommended Action": "Self-monitor and care at home"
+    },
+    {
+        "Symptom": "Mild headache",
+        "Description": "Slight head pain",
+        "Possible Conditions": "Common cold",
+        "Source": "CDC",
+        "Source Link": "https://www.cdc.gov",
+        "Severity Level": "Mild",
+        "Recommended Action": "Self-monitor and care at home"
+    },
+    {
+        "Symptom": "Mild fever",
+        "Description": "Slight increase in body temperature",
+        "Possible Conditions": "Common cold",
+        "Source": "CDC",
+        "Source Link": "https://www.cdc.gov",
+        "Severity Level": "Mild",
+        "Recommended Action": "Self-monitor and care at home"
+    },
+    {
+        "Symptom": "General discomfort",
+        "Description": "Feeling unwell",
+        "Possible Conditions": "Common cold",
+        "Source": "CDC",
+        "Source Link": "https://www.cdc.gov",
+        "Severity Level": "Mild",
+        "Recommended Action": "Self-monitor and care at home"
+    },
+    {
+        "Symptom": "Productive cough",
+        "Description": "Cough with mucus",
+        "Possible Conditions": "Pneumonia",
+        "Source": "CDC",
+        "Source Link": "https://www.cdc.gov",
+        "Severity Level": "Mild",
+        "Recommended Action": "Self-monitor and care at home"
+    },
+    {
+        "Symptom": "Chest pain when breathing",
+        "Description": "Pain during breathing",
+        "Possible Conditions": "Pneumonia",
+        "Source": "CDC",
+        "Source Link": "https://www.cdc.gov",
+        "Severity Level": "Mild",
+        "Recommended Action": "Consult a doctor"
+    },
+    {
+        "Symptom": "Bluish lips",
+        "Description": "Blue tint on lips",
+        "Possible Conditions": "Pneumonia",
+        "Source": "CDC",
+        "Source Link": "https://www.cdc.gov",
+        "Severity Level": "Moderate",
+        "Recommended Action": "Consult a doctor"
+    },
+    {
+        "Symptom": "Excessive thirst",
+        "Description": "Constant feeling of thirst",
+        "Possible Conditions": "Diabetes",
+        "Source": "CDC",
+        "Source Link": "https://www.cdc.gov",
+        "Severity Level": "Moderate",
+        "Recommended Action": "Self-monitor and care at home"
+    },
+    {
+        "Symptom": "Frequent urination",
+        "Description": "Urinating more than usual",
+        "Possible Conditions": "Diabetes",
+        "Source": "CDC",
+        "Source Link": "https://www.cdc.gov",
+        "Severity Level": "Mild",
+        "Recommended Action": "Self-monitor and care at home"
+    },
+    {
+        "Symptom": "SMild wound healing",
+        "Description": "Wounds take longer to heal",
+        "Possible Conditions": "Diabetes",
+        "Source": "CDC",
+        "Source Link": "https://www.cdc.gov",
+        "Severity Level": "Mild",
+        "Recommended Action": "Self-monitor and care at home"
+    },
+    {
+        "Symptom": "Nosebleeds",
+        "Description": "Bleeding from the nose",
+        "Possible Conditions": "Hypertension",
+        "Source": "Mayo Clinic",
+        "Severity Level": "Mild",
+        "Recommended Action": "Consult a doctor"
+    },
+    {
+        "Symptom": "Blurred vision",
+        "Description": "Impaired vision",
+        "Possible Conditions": "Hypertension",
+        "Source": "Mayo Clinic",
+        "Severity Level": "Moderate",
+        "Recommended Action": "Go to the hospital immediately"
+    },
+    {
+        "Symptom": "Fever + Cough + Sore throat",
+        "Description": "Fever ≥38°C, dry or productive cough, sore throat on swalMilding.",
+        "Possible Conditions": "Seasonal influenza / Upper respiratory infection",
+        "Source": "WHO (Influenza)",
+        "Source Link": "https://www.who.int/news-room/fact-sheets/detail/influenza-(seasonal)",
+        "Severity Level": "Severe",
+        "Recommended Action": "Rest, hydrate, antipyretics; see a doctor if severe or persistent >3 days."
+    },
+    {
+        "Symptom": "Severe fever + Shortness of breath + Cough",
+        "Description": "Severe fever, cough, rapid or labored breathing, pleuritic chest pain.",
+        "Possible Conditions": "Pneumonia / Severe COVID-19",
+        "Source": "WHO (Pneumonia / COVID-19)",
+        "Source Link": "https://www.who.int/news-room/fact-sheets/detail/pneumonia; https://www.who.int/emergencies/diseases/novel-coronavirus-2019",
+        "Severity Level": "Severe",
+        "Recommended Action": "Seek immediate medical care; possible hospitalization, oxygen, and targeted treatment."
+    },
+    {
+        "Symptom": "Frequent diarrhea + Dehydration",
+        "Description": "Frequent loose stools, sunken eyes, dry mouth, decreased urine output.",
+        "Possible Conditions": "Acute diarrhea / Gastroenteritis",
+        "Source": "WHO (Diarrhoeal disease)",
+        "Source Link": "https://www.who.int/news-room/fact-sheets/detail/diarrhoeal-disease",
+        "Severity Level": "Moderate",
+        "Recommended Action": "Oral rehydration solutions; seek care if worsening, Severe fever, or bloody stools."
+    },
+    {
+        "Symptom": "Severe abdominal pain + Fever + Nausea",
+        "Description": "Acute severe abdominal pain with fever, vomiting, and localized tenderness.",
+        "Possible Conditions": "Appendicitis / Intra-abdominal infection",
+        "Source": "NHS (Appendicitis)",
+        "Source Link": "https://www.nhs.uk/conditions/appendicitis/",
+        "Severity Level": "Very Severe",
+        "Recommended Action": "Urgent surgical assessment; imaging and possible emergency surgery."
+    },
+    {
+        "Symptom": "Chest pain + Diaphoresis + Nausea",
+        "Description": "Crushing chest pain radiating to arm/jaw, sweating, dizziness or nausea.",
+        "Possible Conditions": "Myocardial infarction (heart attack)",
+        "Source": "AHA / CDC (Heart attack)",
+        "Source Link": "https://www.cdc.gov/heartdisease/heart_attack.htm",
+        "Severity Level": "Very Severe",
+        "Recommended Action": "Call emergency services immediately; transport to facility with cardiac intervention."
+    },
+    {
+        "Symptom": "Sudden facial droop + Unilateral weakness + Slurred speech",
+        "Description": "Sudden onset facial droop, unilateral limb weakness, and speech difficulty.",
+        "Possible Conditions": "Stroke",
+        "Source": "CDC (Stroke)",
+        "Source Link": "https://www.cdc.gov/stroke/signs_symptoms.htm",
+        "Severity Level": "Very Severe",
+        "Recommended Action": "Call emergency services immediately (FAST); transport for urgent neuroimaging and intervention."
+    },
+    {
+        "Symptom": "Cough + Purulent sputum + Fever",
+        "Description": "Productive cough with yelMild/green sputum, fever, and localized chest discomfort.",
+        "Possible Conditions": "Bacterial pneumonia",
+        "Source": "CDC (Pneumonia)",
+        "Source Link": "https://www.cdc.gov/pneumonia/index.html",
+        "Severity Level": "Severe",
+        "Recommended Action": "See physician, chest X-ray, start antibiotics as indicated."
+    },
+    {
+        "Symptom": "Dry cough + Wheeze + Night dyspnea",
+        "Description": "Dry cough with wheeze; symptoms worse at night or with exertion.",
+        "Possible Conditions": "Asthma",
+        "Source": "WHO (Asthma)",
+        "Source Link": "https://www.who.int/news-room/fact-sheets/detail/asthma",
+        "Severity Level": "Moderate",
+        "Recommended Action": "Use short-acting bronchodilator for attacks; refer to respiratory specialist if recurrent."
+    },
+    {
+        "Symptom": "Fever + Rash + Myalgia",
+        "Description": "Fever, rash, myalgia/arthralgia; mosquito-transmitted viruses suspected.",
+        "Possible Conditions": "Dengue / Chikungunya",
+        "Source": "WHO (Dengue/Chikungunya)",
+        "Source Link": "https://www.who.int/news-room/fact-sheets/detail/dengue-and-severe-dengue; https://www.who.int/news-room/fact-sheets/detail/chikungunya",
+        "Severity Level": "Severe",
+        "Recommended Action": "Seek testing and care; avoid aspirin; monitor warning signs."
+    },
+    {
+        "Symptom": "Dysuria + Polyuria + Mild-grade fever",
+        "Description": "Painful urination, increased frequency, possible Mild fever.",
+        "Possible Conditions": "Urinary tract infection (UTI)",
+        "Source": "CDC (UTI)",
+        "Source Link": "https://www.cdc.gov/antibiotic-use/uti.html",
+        "Severity Level": "Moderate",
+        "Recommended Action": "Hydrate, urinalysis; antibiotics if indicated."
+    },
+    {
+        "Symptom": "Polyuria + Polydipsia + Weight loss",
+        "Description": "Excessive thirst and urination with unintended weight loss.",
+        "Possible Conditions": "Diabetes mellitus",
+        "Source": "WHO (Diabetes)",
+        "Source Link": "https://www.who.int/health-topics/diabetes",
+        "Severity Level": "Severe",
+        "Recommended Action": "Check blood glucose; diabetes education and management."
+    },
+    {
+        "Symptom": "Acute swollen painful joint + Fever",
+        "Description": "Single joint swelling, severe pain, systemic signs of infection.",
+        "Possible Conditions": "Septic arthritis / Acute gout",
+        "Source": "Arthritis Foundation / CDC",
+        "Source Link": "https://www.arthritis.org; https://www.cdc.gov",
+        "Severity Level": "Severe",
+        "Recommended Action": "Urgent assessment, joint aspiration for culture; antibiotics or anti-inflammatories as appropriate."
+    },
+    {
+        "Symptom": "Mild back pain + Leg numbness/weakness",
+        "Description": "Mild back pain radiating to legs with sensory/motor signs.",
+        "Possible Conditions": "Herniated disc with nerve compression",
+        "Source": "Mayo Clinic (Herniated disk)",
+        "Source Link": "https://www.mayoclinic.org/diseases-conditions/herniated-disk",
+        "Severity Level": "Moderate",
+        "Recommended Action": "Rest, physiotherapy; neurosurgical review if progressive deficits."
+    },
+    {
+        "Symptom": "Severe headache + Neck stiffness + Vomiting",
+        "Description": "Extreme headache with neck rigidity and vomiting.",
+        "Possible Conditions": "Meningitis",
+        "Source": "WHO (Meningitis)",
+        "Source Link": "https://www.who.int/news-room/fact-sheets/detail/meningitis",
+        "Severity Level": "Very Severe",
+        "Recommended Action": "Emergency evaluation; lumbar puncture and antibiotic/antiviral therapy."
+    },
+    {
+        "Symptom": "Prolonged loss of consciousness / Seizures",
+        "Description": "Prolonged seizures or unresponsiveness.",
+        "Possible Conditions": "Status epilepticus / Severe seizures",
+        "Source": "WHO (Epilepsy)",
+        "Source Link": "https://www.who.int/news-room/fact-sheets/detail/epilepsy",
+        "Severity Level": "Very Severe",
+        "Recommended Action": "Call emergency services; folMild seizure management protocols and airway support."
+    },
+    {
+        "Symptom": "Hemoptysis + Weight loss + Fatigue",
+        "Description": "Coughing blood, unexplained weight loss and fatigue.",
+        "Possible Conditions": "Pulmonary tuberculosis / Lung cancer",
+        "Source": "WHO (Tuberculosis)",
+        "Source Link": "https://www.who.int/health-topics/tuberculosis",
+        "Severity Level": "Severe",
+        "Recommended Action": "Respiratory evaluation, CXR and sputum testing; specialist management."
+    },
+    {
+        "Symptom": "Dizziness + Ataxia + Nausea",
+        "Description": "Vertigo, gait instability, nausea or vomiting.",
+        "Possible Conditions": "Vertigo / Vestibular disorders / Posterior circulation stroke",
+        "Source": "Mayo Clinic / CDC",
+        "Source Link": "https://www.mayoclinic.org; https://www.cdc.gov",
+        "Severity Level": "Moderate - Severe",
+        "Recommended Action": "Urgent neuro assessment if focal signs present; vestibular rehab if peripheral."
+    },
+    {
+        "Symptom": "Abdominal pain + Diarrhea + Mild-grade fever",
+        "Description": "Abdominal cramps, loose stools, Mild-grade fever.",
+        "Possible Conditions": "Bacterial gastroenteritis / Gastroenteritis",
+        "Source": "WHO (Gastroenteritis)",
+        "Source Link": "https://www.who.int/news-room/fact-sheets/detail/diarrhoeal-disease",
+        "Severity Level": "Moderate",
+        "Recommended Action": "Rehydrate, rest; seek care if bloody stools, Severe fever, or persistent symptoms."
+    },
+    {
+        "Symptom": "Red eye + Pain + Blurred vision",
+        "Description": "Red eye with pain or blurred vision; possible corneal involvement.",
+        "Possible Conditions": "Conjunctivitis / Keratitis / Corneal ulcer",
+        "Source": "Mayo Clinic / NHS",
+        "Source Link": "https://www.mayoclinic.org; https://www.nhs.uk",
+        "Severity Level": "Moderate - Severe",
+        "Recommended Action": "Avoid rubbing; use prescribed eye drops; ophthalmology consult if severe."
+    },
+    {
+        "Symptom": "Rash + Fever + Vesicular lesions",
+        "Description": "Fever with vesicular rash localized or generalized.",
+        "Possible Conditions": "Chickenpox / Shingles",
+        "Source": "WHO / CDC",
+        "Source Link": "https://www.who.int; https://www.cdc.gov",
+        "Severity Level": "Moderate - Severe",
+        "Recommended Action": "Isolate, symptomatic care; antivirals if indicated in Severe-risk groups."
+    },
+    {
+        "Symptom": "Shortness of breath + Leg swelling + Fatigue",
+        "Description": "Breathlessness with peripheral edema and reduced exercise tolerance.",
+        "Possible Conditions": "Congestive heart failure",
+        "Source": "AHA / WHO",
+        "Source Link": "https://www.heart.org; https://www.who.int",
+        "Severity Level": "Severe",
+        "Recommended Action": "Cardiac evaluation, functional tests, medication optimization and fluid management."
+    },
+    {
+        "Symptom": "Fever + Loss of taste + Smell",
+        "Description": "Fever, cough, sudden anosmia/ageusia.",
+        "Possible Conditions": "COVID-19",
+        "Source": "WHO (COVID-19)",
+        "Source Link": "https://www.who.int/emergencies/diseases/novel-coronavirus-2019",
+        "Severity Level": "Severe",
+        "Recommended Action": "Isolate, test (PCR/rapid), folMild public health guidance."
+    },
+    {
+        "Symptom": "Upper abdominal pain + Heartburn + Nausea",
+        "Description": "Epigastric pain, heartburn, nausea after meals.",
+        "Possible Conditions": "Peptic ulcer / GERD",
+        "Source": "NHS / Mayo Clinic",
+        "Source Link": "https://www.nhs.uk; https://www.mayoclinic.org",
+        "Severity Level": "Moderate",
+        "Recommended Action": "Diet modification, acid suppression; GI evaluation if persistent."
+    },
+    {
+        "Symptom": "Paresthesia + Limb weakness",
+        "Description": "Paresthesia, tingling, mild weakness in limbs.",
+        "Possible Conditions": "Peripheral neuropathy (e.g., diabetic)",
+        "Source": "WHO / Mayo Clinic",
+        "Source Link": "https://www.who.int; https://www.mayoclinic.org",
+        "Severity Level": "Moderate",
+        "Recommended Action": "Check glucose; neurology assessment; symptomatic treatment."
+    },
+    {
+        "Symptom": "UTI with Severe fever + Flank pain",
+        "Description": "Urinary symptoms with Severe fever and unilateral flank pain.",
+        "Possible Conditions": "Pyelonephritis",
+        "Source": "CDC (UTI/pyelonephritis)",
+        "Source Link": "https://www.cdc.gov/antibiotic-use/uti.html",
+        "Severity Level": "Severe",
+        "Recommended Action": "Urinalysis and blood tests; IV antibiotics if severe."
+    }
+]
