@@ -48,7 +48,7 @@ jobs:
           aws ecr get-login-password --region ${{ secrets.AWS_REGION }} | docker login --username AWS --password-stdin ${{ secrets.ECR_REPOSITORY }} && \
           docker pull ${{ secrets.ECR_REPOSITORY }}:latest && \
           (docker rm -f nestjs-api || true) && \
-          docker run -d --name nestjs-api -p 3000:3000 \
+          docker run -d --name nestjs-api -p 4000:4000 \
             -e MONGO_URI='${{ secrets.MONGO_URI }}' \
             -e OPENAI_API_KEY='${{ secrets.OPENAI_API_KEY }}' \
             -e PORT=4000 \
