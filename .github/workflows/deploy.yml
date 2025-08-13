@@ -3,11 +3,11 @@ name: CI/CD NestJS + ECR → EC2
 on:
   push:
     branches:
-      - develop
+      - feat/cicd
 
 jobs:
   build-and-deploy:
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-latest
 
     env:
       MONGO_USERNAME: ${{ secrets.MONGO_USERNAME }}
