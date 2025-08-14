@@ -1,0 +1,60 @@
+name: CI/CD NestJS + ECR → EC2
+
+on:
+  push:
+    branches:
+      - dev
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: Configure AWS credentials
+      uses: aws-actions/configure-aws-credentials@v2
+      with:
+        aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+        aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+        aws-region: ${{ secrets.AWS_REGION }}
+
+    - name: Login to ECR
+      run: |
+        aws ecr get-login-password --region ${{ secrets.AWS_REGION }} | \
+        docker login --username AWS --password-stdin ${{ secrets.ECR_REPOSITORY }}
+
+    - name: Build Docker image
+      run: |
+        docker build -t nestjs-api .
+        docker tag nestjs-api:latest ${{ secrets.ECR_REPOSITORY }}:latest
+
+    - name: Push Docker image to ECR
+      run: |
+        docker push ${{ secrets.ECR_REPOSITORY }}:latest
+
+    - name: Setup SSH
+      run: |
+        mkdir -p ~/.ssh
+        echo "${{ secrets.EC2_SSH_KEY }}" > ~/.ssh/id_rsa
+        chmod 600 ~/.ssh/id_rsa
+        ssh-keyscan -H ${{ secrets.EC2_HOST }} >> ~/.ssh/known_hosts
+
+    - name: Deploy to EC2
+      run: |
+        ssh -i ~/.ssh/id_rsa ${{ secrets.EC2_USER }}@${{ secrets.EC2_HOST }} \
+          "mkdir -p ${{ secrets.APP_PATH }} && cd ${{ secrets.APP_PATH }} && \
+          aws ecr get-login-password --region ${{ secrets.AWS_REGION }} | docker login --username AWS --password-stdin ${{ secrets.ECR_REPOSITORY }} && \
+          docker pull ${{ secrets.ECR_REPOSITORY }}:latest && \
+          (docker rm -f nestjs-api || true) && \
+          docker run -d --name nestjs-api -p 4000:4000 \
+            -e MONGO_URI='${{ secrets.MONGO_URI }}' \
+            -e OPENAI_API_KEY='${{ secrets.OPENAI_API_KEY }}' \
+            -e PORT=4000 \
+            ${{ secrets.ECR_REPOSITORY }}:latest"
+
+    - name: Cleanup unused Docker images
+      run: |
+        ssh -i ~/.ssh/id_rsa ${{ secrets.EC2_USER }}@${{ secrets.EC2_HOST }} \
+          "docker image prune -f && docker system prune -f"
