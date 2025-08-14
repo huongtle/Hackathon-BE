@@ -1,0 +1,353 @@
+﻿{
+  "severity_assessment": {
+    "emergency_level": {
+      "critical": {
+        "symptoms": [
+          "Bluish lips",
+          "Chest pain + Diaphoresis + Nausea",
+          "Sudden facial droop + Unilateral weakness + Slurred speech",
+          "Severe headache + Neck stiffness + Vomiting",
+          "Prolonged loss of consciousness / Seizures",
+          "Severe fever + Shortness of breath + Cough",
+          "Severe abdominal pain + Fever + Nausea",
+          "Hemoptysis + Weight loss + Fatigue",
+          "UTI with Severe fever + Flank pain"
+        ],
+        "recommendation": {
+          "en": "🚨 EMERGENCY - Call 911 or go to Emergency Room immediately",
+          "vi": "🚨 CẤP CỨU - Gọi 115 hoặc đến Cấp cứu ngay lập tức"
+        },
+        "action": "immediate_emergency_care",
+        "possible_causes": {
+          "en": "Possible causes may include: Myocardial infarction (heart attack), Stroke, Meningitis, Pneumonia with hypoxia, Pyelonephritis, Appendicitis with complications, Pulmonary tuberculosis, Lung cancer, Status epilepticus",
+          "vi": "Một số nguyên nhân có thể là: Nhồi máu cơ tim, Đột quỵ, Viêm màng não, Viêm phổi thiếu oxy, Viêm thận-bể thận, Viêm ruột thừa có biến chứng, Lao phổi, Ung thư phổi, Động kinh nặng"
+        },
+        "sources": [
+          "AHA/CDC (Heart attack): https://www.cdc.gov/heartdisease/about.htm",
+          "CDC (Stroke): https://www.cdc.gov/stroke/about.htm",
+          "WHO (Meningitis): https://www.who.int/news-room/fact-sheets/detail/meningitis",
+          "CDC (Pneumonia): https://www.cdc.gov/pneumonia/about.html",
+          "Mayo Clinic (Pyelonephritis): https://www.mayoclinic.org/diseases-conditions/kidney-infection",
+          "WHO (Tuberculosis): https://www.who.int/health-topics/tuberculosis"
+        ]
+      },
+      "urgent": {
+        "symptoms": [
+          "Shortness of breath",
+          "Severe fever",
+          "Severe headache",
+          "Wheezing",
+          "Chest tightness",
+          "Chest pain",
+          "Swelling in legs",
+          "Rapid heartbeat",
+          "Rebound tenderness",
+          "Inability to pass gas",
+          "Chest pain when breathing",
+          "Frequent diarrhea + Dehydration",
+          "Cough + Purulent sputum + Fever",
+          "Dry cough + Wheeze + Night dyspnea",
+          "Fever + Rash + Myalgia",
+          "Polyuria + Polydipsia + Weight loss",
+          "Acute swollen painful joint + Fever",
+          "Dizziness + Ataxia + Nausea",
+          "Red eye + Pain + Blurred vision",
+          "Rash + Fever + Vesicular lesions",
+          "Shortness of breath + Leg swelling + Fatigue",
+          "Paresthesia + Limb weakness",
+          "Fever + Loss of taste + Smell"
+        ],
+        "recommendation": {
+          "en": "⚠️ URGENT - Seek medical attention within 2-4 hours",
+          "vi": "⚠️ KHẨN CẤP - Cần khám bác sĩ trong 2-4 giờ"
+        },
+        "action": "urgent_medical_care",
+        "possible_causes": {
+          "en": "Possible causes may include: Bacterial pneumonia, Asthma exacerbation, Heart disease, Septic arthritis, Acute gout, Conjunctivitis, Keratitis, Chickenpox, Shingles, Congestive heart failure, Dengue, Chikungunya, Peripheral neuropathy, Appendicitis, Bowel obstruction",
+          "vi": "Một số nguyên nhân có thể là: Viêm phổi do vi khuẩn, Hen suyễn cấp, Bệnh tim, Viêm khớp nhiễm khuẩn, Gout cấp, Viêm kết mạc, Viêm giác mạc, Thủy đậu, Zona, Suy tim sung huyết, Dengue, Chikungunya, Bệnh thần kinh ngoại vi, Viêm ruột thừa, Tắc ruột"
+        },
+        "sources": [
+          "CDC (Pneumonia): https://www.cdc.gov/pneumonia/about.html",
+          "WHO (Asthma): https://www.who.int/news-room/fact-sheets/detail/asthma",
+          "NIH/AHA (Heart disease): https://www.nih.gov/health-information",
+          "Mayo Clinic (Gout): https://www.mayoclinic.org/diseases-conditions/gout",
+          "Mayo Clinic (Conjunctivitis): https://www.mayoclinic.org/diseases-conditions/pink-eye",
+          "WHO (Dengue/Chikungunya): https://www.who.int/news-room/fact-sheets/detail/dengue-and-severe-dengue",
+          "AHA (Heart Failure): https://www.heart.org/en/health-topics/heart-failure",
+          "Mayo Clinic (Appendicitis): https://www.mayoclinic.org/diseases-conditions/appendicitis"
+        ]
+      },
+      "moderate": {
+        "symptoms": [
+          "Fever",
+          "Loss of smell",
+          "Loss of taste",
+          "Vomiting",
+          "Pain behind the eyes",
+          "Skin rash",
+          "Coughing at night",
+          "Diarrhea",
+          "Stomach cramps",
+          "Milder right abdominal pain",
+          "Frequent urination (Diabetes)",
+          "Productive cough",
+          "Excessive thirst",
+          "Nosebleeds",
+          "Blurred vision",
+          "Fever + Cough + Sore throat",
+          "Dysuria + Polyuria + Mild-grade fever",
+          "Mild back pain + Leg numbness/weakness",
+          "Abdominal pain + Diarrhea + Mild-grade fever",
+          "Upper abdominal pain + Heartburn + Nausea",
+          "Paresthesia + Limb weakness"
+        ],
+        "recommendation": {
+          "en": "📋 Schedule appointment with doctor within 24-48 hours",
+          "vi": "📋 Nên đặt lịch khám bác sĩ trong 24-48 giờ"
+        },
+        "action": "routine_medical_care",
+        "possible_causes": {
+          "en": "Possible causes may include: COVID-19, Seasonal influenza, Upper respiratory infection, Dengue fever, Urinary tract infection (UTI), Bacterial gastroenteritis, Peptic ulcer, GERD, Herniated disc with nerve compression, Diabetes mellitus, Hypertension, Acute diarrhea, Food poisoning",
+          "vi": "Một số nguyên nhân có thể là: COVID-19, Cúm mùa, Viêm đường hô hấp trên, Sốt xuất huyết, Nhiễm trùng đường tiết niệu, Nhiễm khuẩn tiêu hóa, Loét dạ dày, GERD, Thoát vị đĩa đệm, Tiểu đường, Tăng huyết áp, Tiêu chảy cấp, Ngộ độc thực phẩm"
+        },
+        "sources": [
+          "WHO (COVID-19): https://www.who.int/emergencies/diseases/novel-coronavirus-2019",
+          "WHO (Influenza): https://www.who.int/news-room/fact-sheets/detail/influenza-(seasonal)",
+          "WHO (Dengue): https://www.who.int/news-room/fact-sheets/detail/dengue-and-severe-dengue",
+          "Mayo Clinic (UTI): https://www.mayoclinic.org/diseases-conditions/urinary-tract-infection",
+          "WHO (Gastroenteritis): https://www.who.int/news-room/fact-sheets/detail/diarrhoeal-disease",
+          "NHS (GERD): https://www.nhs.uk/conditions/heartburn-and-acid-reflux/",
+          "WHO (Diabetes): https://www.who.int/health-topics/diabetes",
+          "CDC (Food poisoning): https://www.cdc.gov/foodsafety/foodborne-germs.html"
+        ]
+      },
+      "mild": {
+        "symptoms": [
+          "Dry cough",
+          "Fatigue",
+          "Muscle pain",
+          "Sore throat",
+          "Headache",
+          "Chills",
+          "Runny nose",
+          "Nasal congestion",
+          "Sweating",
+          "Body aches",
+          "Joint pain",
+          "Nausea",
+          "Loss of appetite",
+          "Missed period",
+          "Breast tenderness",
+          "Frequent urination (Pregnancy)",
+          "Cravings",
+          "Sneezing",
+          "Watery eyes",
+          "Mild headache",
+          "Mild fever",
+          "General discomfort",
+          "Mild wound healing"
+        ],
+        "recommendation": {
+          "en": "🏠 Monitor symptoms, rest, and self-care. See doctor if worsens",
+          "vi": "🏠 Theo dõi triệu chứng, nghỉ ngơi. Khám bác sĩ nếu nặng hơn"
+        },
+        "action": "self_care_monitoring",
+        "possible_causes": {
+          "en": "Possible causes may include: Common cold, Seasonal allergies, Stress, Minor viral infection, Dehydration, Normal pregnancy symptoms, Mild asthma, Minor injuries, Overexertion, Sleep deprivation, Flu, COVID-19 (mild cases)",
+          "vi": "Một số nguyên nhân có thể là: Cảm lạnh thông thường, Dị ứng theo mùa, Căng thẳng, Nhiễm virus nhẹ, Mất nước, Triệu chứng bình thường của thai kỳ, Hen suyễn nhẹ, Chấn thương nhỏ, Gắng sức quá mức, Thiếu ngủ, Cúm, COVID-19 (ca nhẹ)"
+        },
+        "sources": [
+          "CDC (Common cold): https://www.cdc.gov/features/rhinoviruses/index.html",
+          "CDC (Allergies): https://www.cdc.gov/nceh/airpollution/allergens/",
+          "WebMD (Pregnancy): https://www.webmd.com/baby/guide/pregnancy-symptoms-early",
+          "Mayo Clinic (Asthma): https://www.mayoclinic.org/diseases-conditions/asthma",
+          "CDC (Dehydration): https://www.cdc.gov/healthywater/drinking/nutrition/index.html",
+          "WHO (COVID-19): https://www.who.int/emergencies/diseases/novel-coronavirus-2019",
+          "CDC (Flu): https://www.cdc.gov/flu/symptoms/symptoms.htm"
+        ]
+      }
+    }
+  },
+  "symptom_severity_scoring": {
+    "fever": {
+      "mild": "37.1-38.0°C",
+      "moderate": "38.1-39.0°C",
+      "severe": ">39.0°C"
+    },
+    "pain_scale": {
+      "mild": "1-3/10",
+      "moderate": "4-6/10",
+      "severe": "7-10/10"
+    },
+    "breathing": {
+      "mild": "Slight shortness of breath with exertion",
+      "moderate": "Shortness of breath with minimal activity",
+      "severe": "Shortness of breath at rest"
+    }
+  },
+  "red_flags": {
+    "immediate_911": [
+      "Chest pain with radiation to arm/jaw",
+      "Sudden severe headache (worst ever)",
+      "Difficulty breathing at rest",
+      "Loss of consciousness",
+      "Severe abdominal pain with rigidity",
+      "Sudden weakness/numbness one side",
+      "Coughing up blood",
+      "High fever with neck stiffness",
+      "Bluish lips or face"
+    ],
+    "urgent_care": [
+      "Persistent high fever >39°C",
+      "Severe dehydration signs",
+      "Persistent vomiting",
+      "Signs of infection with fever",
+      "Eye pain with vision changes",
+      "Severe joint swelling with fever",
+      "Wheezing or severe breathing difficulty",
+      "Rapid heartbeat with chest pain"
+    ]
+  },
+  "recommendations_by_system": {
+    "respiratory": {
+      "mild": {
+        "en": "Rest, fluids, monitor temperature. Avoid others if infectious.",
+        "vi": "Nghỉ ngơi, uống nhiều nước, theo dõi nhiệt độ. Tránh tiếp xúc người khác.",
+        "causes": "Common cold, Flu, COVID-19 (mild)",
+        "sources": "CDC, WHO"
+      },
+      "severe": {
+        "en": "Seek immediate medical attention for breathing difficulties.",
+        "vi": "Cần khám cấp cứu ngay khi khó thở.",
+        "causes": "Pneumonia, Severe asthma, COVID-19 (severe)",
+        "sources": "CDC, WHO"
+      }
+    },
+    "cardiovascular": {
+      "any_symptoms": {
+        "en": "Do not ignore chest pain. Seek medical evaluation promptly.",
+        "vi": "Không được bỏ qua đau ngực. Cần khám bác sĩ ngay.",
+        "causes": "Heart attack, Angina, Heart failure, Arrhythmia",
+        "sources": "AHA, CDC, NIH"
+      }
+    },
+    "neurological": {
+      "mild": {
+        "en": "Rest in quiet, dark room. Monitor for worsening symptoms.",
+        "vi": "Nghỉ ngơi trong phòng tối, yên tĩnh. Theo dõi triệu chứng.",
+        "causes": "Tension headache, Stress, Dehydration",
+        "sources": "Mayo Clinic, CDC"
+      },
+      "severe": {
+        "en": "Severe headache or neurological symptoms require immediate care.",
+        "vi": "Đau đầu dữ dội hoặc triệu chứng thần kinh cần cấp cứu ngay.",
+        "causes": "Stroke, Meningitis, Brain hemorrhage",
+        "sources": "WHO, CDC, Mayo Clinic"
+      }
+    },
+    "digestive": {
+      "mild": {
+        "en": "Clear fluids, bland diet, monitor hydration.",
+        "vi": "Uống nhiều nước, ăn nhạt, theo dõi mất nước.",
+        "causes": "Food poisoning, Gastroenteritis, Stress",
+        "sources": "CDC, WHO"
+      },
+      "severe": {
+        "en": "Severe abdominal pain or persistent vomiting needs medical care.",
+        "vi": "Đau bụng dữ dội hoặc nôn liên tục cần khám bác sĩ.",
+        "causes": "Appendicitis, Bowel obstruction, Severe gastroenteritis",
+        "sources": "Mayo Clinic, NHS"
+      }
+    },
+    "pregnancy_related": {
+      "normal_symptoms": {
+        "en": "Normal pregnancy symptoms - monitor and discuss with OB/GYN.",
+        "vi": "Triệu chứng bình thường của thai kỳ - theo dõi và tham khảo bác sĩ sản khoa.",
+        "causes": "Hormonal changes, Physical changes during pregnancy",
+        "sources": "WebMD, Mayo Clinic"
+      }
+    },
+    "diabetes_related": {
+      "symptoms": {
+        "en": "Monitor blood sugar levels and follow diabetes management plan.",
+        "vi": "Theo dõi đường huyết và tuân thủ kế hoạch quản lý tiểu đường.",
+        "causes": "High blood glucose, Diabetic complications",
+        "sources": "CDC, WHO"
+      }
+    }
+  },
+  "follow_up_instructions": {
+    "self_care": {
+      "en": [
+        "Monitor symptoms for 24-48 hours",
+        "Rest and stay hydrated",
+        "Take temperature regularly",
+        "Return if symptoms worsen"
+      ],
+      "vi": [
+        "Theo dõi triệu chứng trong 24-48 giờ",
+        "Nghỉ ngơi và uống nhiều nước",
+        "Đo nhiệt độ thường xuyên",
+        "Quay lại nếu triệu chứng nặng hơn"
+      ]
+    },
+    "medical_care": {
+      "en": [
+        "Bring list of current medications",
+        "Note when symptoms started",
+        "Describe symptom progression",
+        "Mention any recent travel or exposures"
+      ],
+      "vi": [
+        "Mang danh sách thuốc đang dùng",
+        "Ghi nhớ thời điểm bắt đầu triệu chứng",
+        "Mô tả diễn biến triệu chứng",
+        "Nói về việc đi du lịch hoặc tiếp xúc gần đây"
+      ]
+    }
+  },
+  "source": {
+    "medical_guidelines": [
+      "WHO Emergency Triage Assessment and Treatment (ETAT)",
+      "American Heart Association Emergency Cardiovascular Care Guidelines",
+      "Emergency Severity Index (ESI) Implementation Handbook",
+      "Manchester Triage System",
+      "Australian Triage Scale",
+      "Canadian Triage and Acuity Scale (CTAS)"
+    ],
+    "clinical_references": [
+      "Harrison's Principles of Internal Medicine",
+      "Tintinalli's Emergency Medicine Manual",
+      "Oxford Handbook of Emergency Medicine",
+      "UpToDate Clinical Decision Support"
+    ]
+  },
+  "source_link": {
+    "emergency_guidelines": {
+      "who_etat": "https://www.who.int/publications/i/item/9241546875",
+      "aha_guidelines": "https://www.ahajournals.org/doi/10.1161/CIR.0000000000000916",
+      "esi_handbook": "https://www.ahrq.gov/professionals/systems/hospital/esi/index.html",
+      "manchester_triage": "https://www.triagenet.net/"
+    },
+    "medical_databases": {
+      "uptodate": "https://www.uptodate.com/",
+      "pubmed": "https://pubmed.ncbi.nlm.nih.gov/",
+      "cochrane": "https://www.cochranelibrary.com/",
+      "medscape": "https://www.medscape.com/"
+    },
+    "professional_organizations": {
+      "who": "https://www.who.int/",
+      "cdc": "https://www.cdc.gov/",
+      "aha": "https://www.heart.org/",
+      "acep": "https://www.acep.org/",
+      "mayo_clinic": "https://www.mayoclinic.org/",
+      "nhs": "https://www.nhs.uk/",
+      "nih": "https://www.nih.gov/",
+      "webmd": "https://www.webmd.com/"
+    }
+  },
+  "disclaimer": {
+    "en": "⚠️ This is not a substitute for professional medical advice. Always consult healthcare providers for proper diagnosis and treatment.",
+    "vi": "⚠️ Đây không phải lời khuyên y tế chuyên nghiệp. Luôn tham khảo ý kiến bác sĩ để chẩn đoán và điều trị đúng cách."
+  }
+}
