@@ -1,0 +1,396 @@
+﻿{
+  "en": {
+    "fever_questions": [
+      "Do you have a fever? What is your temperature?",
+      "Do you have a mild fever?",
+      "Do you have a severe fever (above 39°C)?",
+      "How long have you had the fever?",
+      "Is the fever constant or comes and goes?",
+      "Have you taken any fever-reducing medication?"
+    ],
+    "respiratory_questions": [
+      "Do you have a cough? Is it dry or with phlegm?",
+      "Do you have a productive cough with mucus?",
+      "Are you experiencing shortness of breath or chest tightness?",
+      "Do you feel breathless during light activities?",
+      "Do you have wheezing or chest tightness?",
+      "Do you cough more at night?",
+      "Are you coughing up blood?",
+      "Do you have a runny nose or nasal congestion?",
+      "Are you sneezing frequently?"
+    ],
+    "pain_questions": [
+      "Do you have muscle pain or body aches?",
+      "Do you have a sore throat?",
+      "Do you have a headache? Where is the pain located?",
+      "Do you have a mild headache?",
+      "Do you have a severe headache?",
+      "Do you have chest pain? Does it hurt more when breathing?",
+      "Do you have joint pain? Which joints hurt?",
+      "Do you have abdominal pain? Where exactly?",
+      "Do you have mild right abdominal pain?",
+      "Do you have back pain with leg numbness or weakness?",
+      "Do you have pain behind your eyes?"
+    ],
+    "sensory_questions": [
+      "Have you lost your sense of smell or taste?",
+      "Do you have blurred vision?",
+      "Do you have watery eyes?",
+      "Are you experiencing any skin rash?"
+    ],
+    "cardiovascular_questions": [
+      "Is your heart beating unusually fast?",
+      "Do you feel chest pain? How long does it last?",
+      "Do you have swollen legs or prolonged fatigue?",
+      "Do you feel dizzy or lightheaded?"
+    ],
+    "digestive_questions": [
+      "Do you feel nauseous, have diarrhea, or constipation?",
+      "Do you have loss of appetite or bloating?",
+      "How many times a day do you have bowel movements?",
+      "Do you have vomiting or stomach cramps?",
+      "Do you have upper abdominal pain with heartburn?"
+    ],
+    "neurological_questions": [
+      "Do you have a headache? Where is the pain located?",
+      "Are you feeling dizzy or unbalanced?",
+      "Have you had trouble sleeping, anxiety, or stress recently?",
+      "Do you have any facial drooping or weakness on one side?",
+      "Do you have slurred speech?",
+      "Have you experienced any seizures or loss of consciousness?",
+      "Do you have numbness or tingling in your limbs?"
+    ],
+    "urinary_questions": [
+      "Do you have frequent urination?",
+      "Do you feel pain or burning when urinating?",
+      "Do you have excessive thirst?",
+      "Do you have flank pain?"
+    ],
+    "pregnancy_questions": [
+      "Have you missed your period?",
+      "Do you have breast tenderness?",
+      "Do you have any unusual cravings?"
+    ],
+    "general_symptoms": [
+      "Do you feel fatigued or unusually tired?",
+      "Do you have chills or sweating?",
+      "Do you have general discomfort?",
+      "Do you have bluish lips?",
+      "Do you have slow wound healing?",
+      "Do you have frequent nosebleeds?",
+      "Do you have inability to pass gas?",
+      "Do you have rebound tenderness in your abdomen?",
+      "Have you experienced unexplained weight loss?",
+      "Do you have numbness or tingling (paresthesia) in your hands or feet?"
+    ],
+    "emergency_combinations": [
+      "Do you have fever with cough and sore throat?",
+      "Do you have severe fever with shortness of breath and cough?",
+      "Do you have frequent diarrhea with signs of dehydration?",
+      "Do you have severe abdominal pain with fever and nausea?",
+      "Do you have chest pain with sweating and nausea?",
+      "Do you have sudden facial drooping with weakness and slurred speech?",
+      "Do you have cough with purulent sputum and fever?",
+      "Do you have dry cough with wheeze and night breathing difficulty?",
+      "Do you have fever with rash and muscle pain?",
+      "Do you have painful urination with frequent urination and mild fever?",
+      "Do you have frequent urination with excessive thirst and weight loss?",
+      "Do you have acute swollen painful joint with fever?",
+      "Do you have severe headache with neck stiffness and vomiting?",
+      "Do you have prolonged loss of consciousness or seizures?",
+      "Do you have coughing up blood with weight loss and fatigue?",
+      "Do you have dizziness with loss of coordination and nausea?",
+      "Do you have abdominal pain with diarrhea and mild fever?",
+      "Do you have red, painful eyes with blurred vision?",
+      "Do you have rash with fever and vesicular lesions?",
+      "Do you have shortness of breath with leg swelling and fatigue?",
+      "Do you have fever with loss of taste and smell?",
+      "Do you have numbness with limb weakness?",
+      "Do you have UTI symptoms with severe fever and flank pain?"
+    ],
+    "medical_history_questions": [
+      "Do you have any chronic illnesses? (e.g., diabetes, hypertension...)",
+      "Have you recently been in contact with anyone who is sick?",
+      "Are you currently taking any medication?",
+      "Do you have slow wound healing?",
+      "Do you have frequent nosebleeds?"
+    ],
+    "symptom_questions": [
+      "What symptoms are you experiencing?",
+      "When did the symptoms start?",
+      "How severe is the pain or discomfort? (mild / moderate / severe)",
+      "Are the symptoms constant or do they come and go?"
+    ],
+    "time_related_questions": [
+      "What time of day do the symptoms occur?",
+      "Is there anything that makes the symptoms worse or better?",
+      "Have the symptoms been getting worse?"
+    ],
+    "fever_related_questions": [
+      "Do you have a fever? What is your temperature?",
+      "How long have you had the fever?",
+      "Is the fever constant or comes and goes?"
+    ],
+    "pain_assessment_questions": [
+      "Where exactly is the pain located?",
+      "On a scale of 1-10, how severe is the pain?",
+      "Does the pain radiate to other areas?",
+      "What type of pain is it? (sharp, dull, throbbing, burning)"
+    ],
+    "sensory_loss_questions": [
+      "Have you lost your sense of smell or taste?",
+      "When did you first notice the loss?",
+      "Is it complete or partial loss?"
+    ],
+    "skin_related_questions": [
+      "Do you have any rash or skin changes?",
+      "Where is the rash located?",
+      "Is it itchy or painful?"
+    ],
+    "pregnancy_related_questions": [
+      "Have you missed your period?",
+      "Do you have breast tenderness or unusual cravings?",
+      "When was your last menstrual period?"
+    ],
+    "emergency_symptoms_questions": [
+      "Do you have severe chest pain with sweating?",
+      "Any sudden weakness or difficulty speaking?",
+      "Are you coughing up blood?",
+      "Do you have severe headache with neck stiffness?"
+    ],
+    "combination_symptoms_questions": [
+      "Do you have fever with cough and sore throat?",
+      "Are you experiencing shortness of breath with leg swelling?",
+      "Do you have abdominal pain with fever and nausea?",
+      "Any facial drooping with weakness on one side?"
+    ],
+    "quick_reply_suggestions": {
+      "duration": [
+        "Today",
+        "1–3 days ago",
+        "More than 1 week"
+      ],
+      "symptoms": [
+        "Fever",
+        "Dry cough",
+        "Fatigue",
+        "Loss of smell",
+        "Loss of taste",
+        "Shortness of breath",
+        "Muscle pain",
+        "Sore throat",
+        "Headache",
+        "Chills",
+        "Runny nose",
+        "Nasal congestion",
+        "Sweating",
+        "Body aches",
+        "Vomiting",
+        "Chest pain",
+        "Abdominal pain",
+        "Dizziness",
+        "Rash",
+        "Joint pain",
+        "Nausea",
+        "Diarrhea"
+      ]
+    }
+  },
+  "vi": {
+    "fever_questions": [
+      "Bạn có bị sốt không? Nhiệt độ bao nhiêu?",
+      "Bạn có sốt nhẹ không?",
+      "Bạn có sốt cao (trên 39°C) không?",
+      "Bạn sốt được bao lâu rồi?",
+      "Sốt liên tục hay từng đợt?",
+      "Bạn có uống thuốc hạ sốt không?"
+    ],
+    "respiratory_questions": [
+      "Bạn có ho không? Ho khan hay có đờm?",
+      "Bạn có ho có đờm không?",
+      "Bạn có bị khó thở, tức ngực không?",
+      "Có cảm thấy hụt hơi khi vận động nhẹ?",
+      "Bạn có thở khò khè hoặc tức ngực không?",
+      "Bạn có ho nhiều vào ban đêm không?",
+      "Bạn có ho ra máu không?",
+      "Bạn có sổ mũi hoặc nghẹt mũi không?",
+      "Bạn có hắt hơi thường xuyên không?"
+    ],
+    "pain_questions": [
+      "Bạn có đau cơ hoặc đau toàn thân không?",
+      "Bạn có đau họng không?",
+      "Bạn có đau đầu? Vị trí đau ở đâu?",
+      "Bạn có đau đầu nhẹ không?",
+      "Bạn có đau đầu dữ dội không?",
+      "Bạn có đau ngực không? Có đau hơn khi thở không?",
+      "Bạn có đau khớp không? Khớp nào bị đau?",
+      "Bạn có đau bụng không? Đau ở vị trí nào?",
+      "Bạn có đau bụng phải nhẹ không?",
+      "Bạn có đau lưng kèm tê hoặc yếu chân không?",
+      "Bạn có đau sau hốc mắt không?"
+    ],
+    "sensory_questions": [
+      "Bạn có mất khứu giác hoặc vị giác không?",
+      "Bạn có nhìn mờ không?",
+      "Bạn có chảy nước mắt không?",
+      "Bạn có nổi ban da không?"
+    ],
+    "cardiovascular_questions": [
+      "Tim bạn có đập nhanh bất thường không?",
+      "Có bị đau tức ngực không? Cơn đau kéo dài bao lâu?",
+      "Bạn có bị phù chân hoặc mệt mỏi kéo dài không?",
+      "Bạn có cảm thấy chóng mặt hoặc choáng váng không?"
+    ],
+    "digestive_questions": [
+      "Bạn có buồn nôn, tiêu chảy hay táo bón không?",
+      "Bạn có chán ăn, đầy bụng không?",
+      "Bạn đi ngoài mấy lần một ngày?",
+      "Bạn có nôn hoặc đau dạ dày không?",
+      "Bạn có đau thượng vị kèm ợ nóng không?"
+    ],
+    "neurological_questions": [
+      "Bạn có bị đau đầu? Vị trí đau ở đâu?",
+      "Có bị chóng mặt, mất thăng bằng không?",
+      "Bạn có bị mất ngủ, lo âu, hay stress gần đây?",
+      "Bạn có bị méo mặt hoặc yếu một bên không?",
+      "Bạn có nói ngọng không?",
+      "Bạn có bị co giật hoặc bất tỉnh không?",
+      "Bạn có tê hoặc ngứa ran ở tay chân không?"
+    ],
+    "urinary_questions": [
+      "Bạn có đi tiểu nhiều lần không?",
+      "Bạn có đau rát khi đi tiểu không?",
+      "Bạn có khát nước quá mức không?",
+      "Bạn có đau sườn không?",
+      "Bạn có tê bì hoặc ngứa ran ở tay chân không?"
+    ],
+    "pregnancy_questions": [
+      "Bạn có trễ kinh không?",
+      "Bạn có căng tức vú không?",
+      "Bạn có thèm ăn gì đặc biệt không?"
+    ],
+    "general_symptoms": [
+      "Bạn có cảm thấy mệt mỏi bất thường không?",
+      "Bạn có run rét hoặc đổ mồ hôi không?",
+      "Bạn có cảm thấy khó chịu chung chung không?",
+      "Môi bạn có tím tái không?",
+      "Vết thương của bạn có lành chậm không?",
+      "Bạn có thường xuyên chảy máu cam không?",
+      "Bạn có không thể xì hơi không?",
+      "Bạn có đau phản ứng ở bụng không?",
+      "Bạn có sụt cân không rõ nguyên nhân không?"
+    ],
+    "emergency_combinations": [
+      "Bạn có sốt kèm ho và đau họng không?",
+      "Bạn có sốt cao kèm khó thở và ho không?",
+      "Bạn có tiêu chảy nhiều kèm mất nước không?",
+      "Bạn có đau bụng dữ dội kèm sốt và buồn nôn không?",
+      "Bạn có đau ngực kèm đổ mồ hôi và buồn nôn không?",
+      "Bạn có đột ngột méo mặt kèm yếu liệt và nói ngọng không?",
+      "Bạn có ho có đờm mủ kèm sốt không?",
+      "Bạn có ho khan kèm khò khè và khó thở ban đêm không?",
+      "Bạn có sốt kèm ban da và đau cơ không?",
+      "Bạn có đau rát khi tiểu kèm tiểu nhiều và sốt nhẹ không?",
+      "Bạn có tiểu nhiều kèm khát nước và sụt cân không?",
+      "Bạn có khớp sưng đau cấp tính kèm sốt không?",
+      "Bạn có đau đầu dữ dội kèm cứng cổ và nôn không?",
+      "Bạn có bất tỉnh kéo dài hoặc co giật không?",
+      "Bạn có ho ra máu kèm sụt cân và mệt mỏi không?",
+      "Bạn có chóng mặt kèm mất điều hòa và buồn nôn không?",
+      "Bạn có đau bụng kèm tiêu chảy và sốt nhẹ không?",
+      "Bạn có mắt đỏ, đau kèm nhìn mờ không?",
+      "Bạn có ban da kèm sốt và tổn thương dạng bóng nước không?",
+      "Bạn có khó thở kèm phù chân và mệt mỏi không?",
+      "Bạn có sốt kèm mất vị giác và khứu giác không?",
+      "Bạn có tê kèm yếu tay chân không?",
+      "Bạn có triệu chứng nhiễm tiết niệu kèm sốt cao và đau sườn không?"
+    ],
+    "medical_history_questions": [
+      "Bạn có đang mắc bệnh mãn tính nào không? (Ví dụ: tiểu đường, cao huyết áp...)",
+      "Gần đây bạn có tiếp xúc với người bị bệnh không?",
+      "Bạn có đang dùng thuốc gì không?",
+      "Bạn có lành vết thương chậm không?",
+      "Bạn có thường xuyên chảy máu cam không?"
+    ],
+    "symptom_questions": [
+      "Bạn đang gặp triệu chứng gì?",
+      "Triệu chứng bắt đầu từ khi nào?",
+      "Mức độ đau hoặc khó chịu như thế nào (nhẹ / vừa / nặng)?",
+      "Triệu chứng có liên tục hay từng cơn?"
+    ],
+    "time_related_questions": [
+      "Triệu chứng xuất hiện vào thời điểm nào trong ngày?",
+      "Có điều gì khiến triệu chứng nặng hơn hoặc đỡ hơn không?",
+      "Triệu chứng có tiến triển nặng hơn không?"
+    ],
+    "fever_related_questions": [
+      "Bạn có bị sốt không? Nhiệt độ bao nhiêu?",
+      "Sốt bao lâu rồi?",
+      "Sốt liên tục hay từng đợt?"
+    ],
+    "pain_assessment_questions": [
+      "Vị trí đau chính xác ở đâu?",
+      "Mức độ đau từ 1-10 là bao nhiêu?",
+      "Cơn đau có lan ra vùng khác không?",
+      "Kiểu đau như thế nào? (nhói, tức, đập thình thịch, rát)"
+    ],
+    "sensory_loss_questions": [
+      "Bạn có bị mất khứu giác hoặc vị giác không?",
+      "Khi nào bạn nhận ra mất khứu/vị giác?",
+      "Mất hoàn toàn hay một phần?"
+    ],
+    "skin_related_questions": [
+      "Có phát ban hay thay đổi da không?",
+      "Vị trí phát ban ở đâu?",
+      "Có ngứa hay đau không?"
+    ],
+    "pregnancy_related_questions": [
+      "Bạn có trễ kinh không?",
+      "Có căng tức vú hoặc thèm ăn bất thường không?",
+      "Kỳ kinh cuối cùng là khi nào?"
+    ],
+    "emergency_symptoms_questions": [
+      "Có đau ngực dữ dội kèm đổ mồ hôi không?",
+      "Có yếu liệt đột ngột hoặc khó nói không?",
+      "Có ho ra máu không?",
+      "Có đau đầu dữ dội kèm cứng gáy không?"
+    ],
+    "combination_symptoms_questions": [
+      "Có sốt kèm ho và đau họng không?",
+      "Có khó thở kèm phù chân không?",
+      "Có đau bụng kèm sốt và buồn nôn không?",
+      "Có méo mặt kèm yếu một bên người không?"
+    ],
+    "quick_reply_suggestions": {
+      "thời_gian": [
+        "Hôm nay",
+        "1-3 ngày trước",
+        "Trên 1 tuần"
+      ],
+      "triệu_chứng": [
+        "Sốt",
+        "Ho khan",
+        "Mệt mỏi",
+        "Mất khứu giác",
+        "Mất vị giác",
+        "Khó thở",
+        "Đau cơ",
+        "Đau họng",
+        "Đau đầu",
+        "Run rét",
+        "Sổ mũi",
+        "Nghẹt mũi",
+        "Đổ mồ hôi",
+        "Đau toàn thân",
+        "Nôn",
+        "Đau ngực",
+        "Đau bụng",
+        "Chóng mặt",
+        "Ban da",
+        "Đau khớp",
+        "Buồn nôn",
+        "Tiêu chảy"
+      ]
+    }
+  }
+}
