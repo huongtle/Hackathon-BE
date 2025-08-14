@@ -6,6 +6,7 @@ import { join } from 'path';
 import { ConfigModule, ConfigService } from '@nestjs/config';
 import { SeverityModule } from './severity/severity.module';
 import { SymptomModule } from './symptom/symptom.module';
+import { PersonInfoModule } from './person-info/person-info.module';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
 
@@ -26,6 +27,7 @@ import { AppService } from './app.service';
     }),
     SeverityModule,
     SymptomModule,
+    PersonInfoModule,
   ],
   controllers: [AppController],
   providers: [AppService],
