@@ -33,8 +33,8 @@ export class SymptomService {
     return this.model.find({ severity }).exec();
   }
 
-  async consultant(input: string): Promise<String> {
-    const result = await this.aiService.analyzeSymptoms(input);
+  async consultant(input: string): Promise<any> {
+    const result = await this.aiService.analyzeSymptoms(input, "EN");
     return  result;//symptom.save();
   }
 }
