@@ -7,6 +7,7 @@ import { ConfigModule, ConfigService } from '@nestjs/config';
 import { SeverityModule } from './severity/severity.module';
 import { SymptomModule } from './symptom/symptom.module';
 import { PersonInfoModule } from './person-info/person-info.module';
+import { SymptomAnalysisModule } from './symptom-analysis/symptom-analysis.module';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
 
@@ -28,6 +29,7 @@ import { AppService } from './app.service';
     SeverityModule,
     SymptomModule,
     PersonInfoModule,
+    SymptomAnalysisModule,
   ],
   controllers: [AppController],
   providers: [AppService],
