@@ -6,9 +6,13 @@ export class AIService {
   private openai: OpenAI;
 
   constructor() {
-    this.openai = new OpenAI({
-      apiKey: process.env.OPENAI_API_KEY,
-    });
+    if (process.env.OPENAI_API_KEY) {
+      this.openai = new OpenAI({
+        apiKey: process.env.OPENAI_API_KEY,
+      });
+    } else {
+      console.warn('OPENAI_API_KEY not found in environment variables');
+    }
   }
 
   async analyzeSymptoms(symptoms: string, locale: string, lackInformation: boolean = false): Promise<string> {
@@ -46,6 +50,11 @@ export class AIService {
 
   async analyzeNextMessage(history: any[], locale: string, lackInformation: boolean = false): Promise<string> {
     try {
+      if (!this.openai) {
+        return locale === 'VI' ? 
+          'Bạn đang gặp triệu chứng gì? Hãy mô tả chi tiết để tôi có thể hỗ trợ bạn tốt hơn.' :
+          'What symptoms are you experiencing? Please describe in detail so I can better assist you.';
+      }
 //       let promt = `History chat: ${JSON.stringify(history)}. Based on symptoms and history chat, suggest possible medical condition and next question to get more information (new information to analyze symptom, not exist information). Use locale ${locale} and Provide response in this exact format:
 // Conditions: [possible medical condition - optional return if have],
 // Message: [next question - required]`;
@@ -85,19 +94,23 @@ Next question: [next question - required]`;
     }
   }
 
-  async getConsultant(symptoms: string, locale: string): Promise<{ symptom: string; risk: string; result: string; advice: string; source: string; }> {
+  async getConsultant(symptoms: string, locale: string): Promise<{ symptom: string; risk: string; result: string; advice: string; source: string; sourceLink: string}> {
     try {
+      if (!this.openai) {
+        throw new Error('OpenAI client not initialized');
+      }
       const prompt = `You are a medical AI assistant. Analyze these symptoms and provide assessment.
 
 Symptoms: ${symptoms}
 Language: ${locale}
 
 Provide response in this exact format:
-Symptom: [list of symptoms]
+Symptom: [list of symptoms - required]
 Risk: [Mild/Moderate/Urgent/Critical]
-Condition: [possible medical condition]
-Advice: [medical advice in ${locale === 'VI' ? 'Vietnamese' : 'English'}]
+Condition: [possible medical condition - required]
+Advice: [medical advice - required]
 Source: [source where have these information]
+Source Link: [link to the source website]
 
 Be concise and professional.`;
 
@@ -108,19 +121,21 @@ Be concise and professional.`;
       });
 
       const result = response.choices[0]?.message?.content?.trim() || '';
-      
+      console.log("AIII RESULTTTTTTTTTTT:"+result);
       const symptomMatch = result.match(/Symptom:\s*(.+?)(?=\n|$)/i);
       const riskMatch = result.match(/Risk:\s*(Mild|Moderate|Urgent|Critical)/i);
       const conditionMatch = result.match(/Condition:\s*(.+?)(?=\n|$)/i);
       const adviceMatch = result.match(/Advice:\s*(.+?)(?=\n|$)/i);
       const sourceMatch = result.match(/Source:\s*(.+?)(?=\n|$)/i);
+      const sourceLinkMatch = result.match(/Source Link:\s*(.+?)(?=\n|$)/i);
       
       return {
-        symptom: symptomMatch ? symptomMatch[1].trim() : symptoms,
-        risk: riskMatch ? riskMatch[1] : 'Moderate',
-        result: conditionMatch ? conditionMatch[1].trim() : 'General symptoms analysis',
-        advice: adviceMatch ? adviceMatch[1].trim() : (locale === 'VI' ? 'Nên tham khảo ý kiến bác sĩ' : 'Please consult a doctor'),
-        source: sourceMatch ? sourceMatch[1].trim():""
+        symptom: symptomMatch ? symptomMatch[1].trim() : '',
+        risk: riskMatch ? riskMatch[1] : '',
+        result: conditionMatch ? conditionMatch[1].trim() : '',
+        advice: adviceMatch ? adviceMatch[1].trim() : '',
+        source: sourceMatch ? sourceMatch[1].trim():"",
+        sourceLink: sourceLinkMatch ? sourceLinkMatch[1].trim():""
       };
     } catch (err) {
       if (err.status === 429) {
@@ -132,7 +147,8 @@ Be concise and professional.`;
         risk: 'Moderate',
         result: 'Unable to analyze symptoms',
         advice: locale === 'VI' ? 'Nên tham khảo ý kiến bác sĩ để được chẩn đoán chính xác' : 'Please consult a doctor for accurate diagnosis',
-        source: 'OpenAI Analysis (Error Fallback)'
+        source: 'OpenAI Analysis (Error Fallback)',
+        sourceLink: ''
       };
     }
   }

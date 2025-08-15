@@ -32,6 +32,7 @@ export class SymptomAnalysisService {
     "i'm done describing",
     "all symptoms covered",
     "that's all",
+    "done",
 
     // ===== Vietnamese =====
     "đó là tất cả triệu chứng",
@@ -50,10 +51,11 @@ export class SymptomAnalysisService {
   ];
   
   async analyzeSymptoms(dto: AnalyzeSymptomsDto) {
-    const locale = dto.locale || 'EN';
-    const userMessages = dto.chat.filter(msg => msg.user === 'user').map(msg => msg.message);
-    const allMessages = dto.chat.map(msg => msg.message).join(' ');
-    console.log(userMessages);
+    try {
+      const locale = dto.locale || 'EN';
+      const userMessages = dto.chat.filter(msg => msg.user === 'user').map(msg => msg.message);
+      const allMessages = dto.chat.map(msg => msg.message).join(' ');
+      console.log('User messages:', userMessages);
     // Check if conversation is complete
     const isCompleted = await this.isConversationComplete(userMessages, allMessages);
     
@@ -73,17 +75,26 @@ export class SymptomAnalysisService {
         const aiAnalysis = await this.aiService.getConsultant(allMessages, locale);
         analyzeResult = this.formatAIResult(aiAnalysis, locale);
       }
-      replyMessage = analyzeResult;
+      
+      console.log("RESULTTTTTTTTTTTTTTTTTTTTT:"+JSON.stringify(analyzeResult));
+      // Set appropriate reply message for completed analysis
+      replyMessage = locale === 'VI' ? 
+        'Phân tích triệu chứng đã hoàn tất. Vui lòng xem kết quả bên dưới.' :
+        'Symptom analysis completed. Please see the results below.';
     } else {
       // Generate follow-up question
       replyMessage = await this.generateFollowUpQuestion(dto.chat, allMessages, userMessages, detectedSymptoms, locale);
     }
 
-    return {
-      isCompleted,
-      analyzeResult,
-      replyMessage
-    };
+      return {
+        isCompleted,
+        analyzeResult,
+        replyMessage
+      };
+    } catch (error) {
+      console.error('Error in analyzeSymptoms:', error);
+      throw new Error('Failed to analyze symptoms: ' + error.message);
+    }
   }
 
   private extractSymptoms(text: string, locale: string): any[] {
@@ -182,7 +193,8 @@ export class SymptomAnalysisService {
       risk,
       result: locale === 'VI' ? highestSeveritySymptom['Possible Conditions (VI)'] : highestSeveritySymptom['Possible Conditions (EN)'],
       advice: locale === 'VI' ? highestSeveritySymptom['Recommended Action (VI)'] : highestSeveritySymptom['Recommended Action (EN)'],
-      source: highestSeveritySymptom['Source']
+      source: highestSeveritySymptom['Source'],
+      sourceLink: highestSeveritySymptom['Source Link']
     };
   }
 
@@ -200,9 +212,10 @@ export class SymptomAnalysisService {
     return {
       symptom: aiResult.symptom,
       risk: aiResult.risk,
-      result: aiResult.condition,
+      result: aiResult.result || aiResult.condition,
       advice: aiResult.advice,
-      source: aiResult.source
+      source: aiResult.source,
+      sourceLink: aiResult.sourceLink
     };
   }
 

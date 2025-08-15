@@ -13,6 +13,11 @@ export class SymptomAnalysisController {
   @ApiResponse({ status: 200, description: 'Symptom analysis completed' })
   @ApiResponse({ status: 400, description: 'Invalid input data' })
   async analyzeSymptoms(@Body(ValidationPipe) dto: AnalyzeSymptomsDto) {
-    return this.symptomAnalysisService.analyzeSymptoms(dto);
+    try {
+      const result = await this.symptomAnalysisService.analyzeSymptoms(dto);
+      return result;
+    } catch (error) {
+      throw error;
+    }
   }
 }
